@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>ciey</title>
+  
+  <subtitle>ciey博客</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://ciey.top/"/>
+  <updated>2020-03-10T12:52:14.928Z</updated>
+  <id>https://ciey.top/</id>
+  
+  <author>
+    <name>ciey</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>express全局处理async error</title>
+    <link href="https://ciey.top/posts/express-async-error/"/>
+    <id>https://ciey.top/posts/express-async-error/</id>
+    <published>2019-08-22T10:22:00.000Z</published>
+    <updated>2020-03-10T12:52:14.928Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/3664948/63739876-7ba27b00-c8c1-11e9-8c0a-a55aff282f56.jpg&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="node" scheme="https://ciey.top/categories/node/"/>
+    
+    
+      <category term="node" scheme="https://ciey.top/tags/node/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>node实现后台权限管理系统</title>
+    <link href="https://ciey.top/posts/node-express-admin/"/>
+    <id>https://ciey.top/posts/node-express-admin/</id>
+    <published>2019-08-21T02:22:00.000Z</published>
+    <updated>2020-03-10T12:52:14.928Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;本文面向的是node初学者，目标是搭建一个基础的后台权限系统。使用的node框架是上手最简单的express，模板是ejs，这些在node入门的书籍中都有介绍说明，所以应该是难度较低的。&lt;/p&gt;
+&lt;p&gt;对于node初学者来说，可以先尝试搭建一个blog，单用户的或者多用户的
+        
+      
+    
+    </summary>
+    
+      <category term="node" scheme="https://ciey.top/categories/node/"/>
+    
+    
+      <category term="node" scheme="https://ciey.top/tags/node/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Adminer轻量级MySQL管理工具</title>
+    <link href="https://ciey.top/posts/adminer-install/"/>
+    <id>https://ciey.top/posts/adminer-install/</id>
+    <published>2018-12-24T05:35:00.000Z</published>
+    <updated>2020-03-10T12:52:14.928Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/3664948/63909091-103ce280-ca54-11e9-96e9-7a4f63fede37.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;h4
+        
+      
+    
+    </summary>
+    
+      <category term="工具" scheme="https://ciey.top/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Adminer" scheme="https://ciey.top/tags/Adminer/"/>
+    
+      <category term="MySQL" scheme="https://ciey.top/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://ciey.top/posts/hello-world/"/>
+    <id>https://ciey.top/posts/hello-world/</id>
+    <published>2018-10-23T07:25:00.000Z</published>
+    <updated>2020-03-10T12:52:14.928Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="Web前端" scheme="https://ciey.top/categories/Web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="Web前端" scheme="https://ciey.top/tags/Web%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+</feed>

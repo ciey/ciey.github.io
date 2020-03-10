@@ -1,0 +1,873 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="node实现后台权限管理系统, ciey">
+    <meta name="description" content="本文面向的是node初学者，目标是搭建一个基础的后台权限系统。使用的node框架是上手最简单的express，模板是ejs，这些在node入门的书籍中都有介绍说明，所以应该是难度较低的。
+对于node初学者来说，可以先尝试搭建一个blog，">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>node实现后台权限管理系统 | ciey</title>
+    <link rel="icon" type="image/png" href="//ciey.gitee.io/static/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="//ciey.gitee.io/static/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="//ciey.gitee.io/static/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="//ciey.gitee.io/static/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    <style type="text/css">
+        
+    </style>
+
+    <script src="//ciey.gitee.io/static/libs/jquery/jquery-2.2.0.min.js"></script>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+<body>
+
+<header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="//ciey.gitee.io/static/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">ciey</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fa fa-navicon"></i></a>
+<ul class="right">
+    
+    <li class="hide-on-med-and-down">
+        <a href="/" class="waves-effect waves-light">
+            
+            <i class="fa fa-home"></i>
+            
+            <span>首页</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/tags" class="waves-effect waves-light">
+            
+            <i class="fa fa-tags"></i>
+            
+            <span>标签</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/categories" class="waves-effect waves-light">
+            
+            <i class="fa fa-bookmark"></i>
+            
+            <span>分类</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/archives" class="waves-effect waves-light">
+            
+            <i class="fa fa-archive"></i>
+            
+            <span>归档</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/about" class="waves-effect waves-light">
+            
+            <i class="fa fa-user-circle-o"></i>
+            
+            <span>关于</span>
+        </a>
+    </li>
+    
+    <li>
+        <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+            <i id="searchIcon" class="fa fa-search" title="搜索"></i>
+        </a>
+    </li>
+</ul>
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="//ciey.gitee.io/static/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">ciey</div>
+        <div class="logo-desc">
+            
+            业精于勤，荒于嬉；行成于思，毁于随
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li>
+            <a href="/" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-home"></i>
+                
+                首页
+            </a>
+        </li>
+        
+        <li>
+            <a href="/tags" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-tags"></i>
+                
+                标签
+            </a>
+        </li>
+        
+        <li>
+            <a href="/categories" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-bookmark"></i>
+                
+                分类
+            </a>
+        </li>
+        
+        <li>
+            <a href="/archives" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-archive"></i>
+                
+                归档
+            </a>
+        </li>
+        
+        <li>
+            <a href="/about" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-user-circle-o"></i>
+                
+                关于
+            </a>
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/ciey" class="waves-effect waves-light" target="_blank">
+                <i class="fa fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/ciey" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('//ciey.gitee.io/static/medias/featureimages/4.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <div class="description center-align post-title">
+                        node实现后台权限管理系统
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="//ciey.gitee.io/static/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 20px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/node/" target="_blank">
+                                <span class="chip bg-color">node</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/node/" class="post-category" target="_blank">
+                                node
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                <div class="post-date info-break-policy">
+                    <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2019-08-21
+                </div>
+
+                
+				
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p>本文面向的是node初学者，目标是搭建一个基础的后台权限系统。使用的node框架是上手最简单的express，模板是ejs，这些在node入门的书籍中都有介绍说明，所以应该是难度较低的。</p>
+<p>对于node初学者来说，可以先尝试搭建一个blog，单用户的或者多用户的都可以。<a href="https://github.com/cnodejs/nodeclub" target="_blank" rel="noopener">cnodejs</a>论坛是我学的第一个源码，还是很经典的。但是由于开发比较早，基于nodev4版本，很多后面新加的特性都未使用，比如class，async/await语法等。随着node版本的大幅升级，目前至少是基于nodev8，稳定的是nodev10版本开发。所以本系列教程node版本至少是8版本，推荐装LTS 10版本。</p>
+<p>ide强烈推荐速度最快，使用最流畅的Visual Studio Code。它也是基于node的electron实现的，一级棒。</p>
+<p>数据库用过MS SQLServer、MySQL、mongodb，其中mongodb好多node教程推荐使用才开始流行，但它并非关系型数据库，所以综合考虑还是选用MySQL。数据库客户端推荐Navicat Premium。</p>
+<p>以上各环境的安装准备工作大家可以自行教程，不在展开说明了。</p>
+<p>说下此项目的目标是搭建一个后台权限管理系统。对于实际项目的业务开发，后台的基础权限框架必不可少。本教程将会带你如何设计用户、角色、菜单、及权限控制，并通过代码示例实现。</p>
+<p>如何定义一个好的框架，没有一个标准。主要看每个人的水平及项目的适用性。以前从事.net开发，学设计模式、封装、Ioc注入等，好固然是好，但也提高了入门的门槛，想要让一个初学者快速上手进行业务开发却很难。因为封装后的代码可读性变差，如果没有一定水平框架也很难维护。还有就是如果一个项目比较小，那么在设计框架时分层分个5、6层就有点过头了，一般3层MVC就够用了。当然如果你在大型互联网公司，接触到的用户数量是几万甚至几十万，业务也很多，那框架就势必要考虑到很多方面的问题，那架构设计就不是那么简简单单的了，可能会涉及到分布式、微服务等。</p>
+<p>我们可以先从基础的简单的框架入手，等经验丰富了后再不断的重构升级以应对日益增长的业务需求。</p>
+<p>下面我们来开始设计并搭建框架。</p>
+<p>最基础的权限是用户的登录，通过用户名和密码跟数据库匹配来判断是否登录成功。<br><img src="https://user-images.githubusercontent.com/3664948/63405937-f7f91200-c41a-11e9-8179-52d2c8dbdbc7.png" alt="用户登陆"></p>
+<p>用户登录并存入session后，下次只需判断session中用户是否存在，可以写在express中间件中。</p>
+<pre><code>/** 权限判断中间件*/
+class authMiddleware {
+    /** 需要用户登录*/
+    async loginRequired(req, res, next) {
+        if (!req.session || !req.session.user || !req.session.user.id) {
+            return res.redirect(&#39;/login&#39;);
+        }
+        await next();
+    }
+}
+
+module.exports = new authMiddleware();
+</code></pre><p>然后在每次请求的路由中，先判断下用户是否已登录，然后再执行相应controller。</p>
+<pre><code>const router = require(&#39;express&#39;).Router(),
+    auth = require(&#39;./middleware/auth&#39;),
+    login = require(&#39;./controller/login&#39;),
+    main = require(&#39;./controller/main&#39;);
+
+router.get(&#39;/login&#39;, login.showLogin);
+router.post(&#39;/login&#39;, login.login);
+
+router.get(&#39;/main&#39;, auth.loginRequired, main.showMain);
+</code></pre><p>其中登录页面及登录post提交是不需要检查session中有无用户的，因为用户这时候还没登录成功。但是像主页/main设定的是需要用户登录才能查看的。</p>
+<p>登录后的后台管理系统布局一般都是左侧是菜单树，右侧为内容。<br><img src="https://user-images.githubusercontent.com/3664948/63408315-4c06f500-c421-11e9-8547-71fc28b8435b.png" alt="image"></p>
+<p>很显然左侧的菜单需要权限控制，用于区分哪些菜单(页面)用户可以访问，哪些菜单(页面)用户不可以访问。一般不能访问的菜单(页面)不显示给用户，这样不同的用户登录后显示的左侧菜单是不相同的。<br><img src="https://user-images.githubusercontent.com/3664948/63409806-7f974e80-c424-11e9-9df8-52df07353ac5.png" alt="image"></p>
+<p>可以从图上看到，在原来的登录的基础上增加了菜单表和用户菜单表，一个用户可以对应有多个菜单。那么他在登录后就获得了相应的菜单集合，在页面左侧加载即可。</p>
+<p>对于那些在界面上没显示的菜单在后台路由中也是要检查下权限的，要不然像用户管理/userList这条路由虽然没有配给某个测试账号，但他可以直接在地址栏输入/userList进行访问。所以在Middleware中需要增加判断用户是否有此page_url的访问权限。</p>
+<pre><code>/** 需要用户菜单权限*/
+    async userPermission(req, res, next) {
+       //先判断用户session
+        if (!req.session || !req.session.user || !req.session.user.id) {
+            return res.redirect(&#39;/login&#39;);
+        }
+        let hasPower = false;
+        //userMenu指当前用户拥有的菜单集合，请自行db查询
+        userMenu.forEach(el =&gt; {
+            if (el.page_url == req.route.path) {
+                hasPower = true;
+            }
+        });
+       if (!hasPower) {
+            if (req.xhr) {
+                return res.json({
+                    state: false,
+                    msg: &quot;抱歉，您无此权限！请联系管理员&quot;
+                });
+            }
+            return res.send(&#39;抱歉，您无此权限！请联系管理员&#39;);
+        }
+        next();
+    }
+</code></pre><p>路由中增加中间件的执行</p>
+<pre><code>router.get(&#39;/userList&#39;, auth.userPermission, main.showUser);
+</code></pre><p>这样当浏览器请求/userList路由时，先执行中间件userPermission方法，判断用户是否拥有此url权限，如果hasPower为false，即没有权限，直接返回输出。如果有权限，再执行相应controller中方法。</p>
+<p>至此，基本的用户登录，及用户菜单权限已设计完成。但如果需要进一步权限控制到页面中的按钮、对用户进行分组设置权限等，还得再进行补充完善。</p>
+<h4 id="按钮（控件）"><a href="#按钮（控件）" class="headerlink" title="按钮（控件）"></a>按钮（控件）</h4><p>上面权限系统控制到了页面，如果页面中不同用户操作按钮（控件）权限需要区分，比如常见的增、删、改操作，还需要进一步权限设计。</p>
+<p>页面列表数据查看、新增、修改、删除等各种操作，都需要通过ajax将数据或参数提交给对应的接口，然后接口再将结果返回，所以我们可以通过限制接口的访问来做到对页面按键功能的控制。</p>
+<p>可以把各种按钮也看成是菜单项，对前面的菜单表进行扩充，增加（控件地址、是否显示）两个字段即可。</p>
+<p>其中控件地址这个字段，就是我们访问接口数据的路由地址，比如说获取单个订单数据是通过指定主键id，它的路由接口一般设计成’/api/user/:id’。这些路由地址是我们自己设计且在整个项目中都是唯一的。所以在开发时，我们可以在后台做个中间件拦截，通过用户是否有这个菜单项对应的接口路由地址，来判断用户是否有访问该接口的权限。</p>
+<p>是否显示字段，是为了在输出菜单列表时将这些按钮菜单项隐藏，不在界面中显示出来。<br><img src="https://user-images.githubusercontent.com/3664948/63414535-a78baf80-c42e-11e9-9b14-1f6ddd3bc77a.png" alt="image"></p>
+<h4 id="角色（职位）"><a href="#角色（职位）" class="headerlink" title="角色（职位）"></a>角色（职位）</h4><p>当系统中用户增多，对每一个用户都需要单独设置权限这种重复劳动工作量增大的时候，势必要考虑用户组了，在我们windows系统中早就有用户组的概念了。有了用户组概念，就可以先设置好某个用户组的权限，然后对于新加进来的用户只需加入之前配置好的用户组中，即新加进来的用户就拥有了用户组的权限。</p>
+<p>考虑到现实情况，一个公司或企业的组织架构通常是有很多个部门组成，部门下面会有相应的职位，比如部门经理、部门员工等。用职位代替角色或用户组更让人能够容易理解。不同的职位有不同的工作职责，也有不同的操作权限。而部门主要是为了方便对职位进行分组管理，如果职位多时没有对应的分组，查询不方便，如果有相似的职位，也容易混淆。</p>
+<p>对于企业来说，人员由于流动关系可能会经常变化，而职位则相对来说是比较固定的，所以权限绑定职位更合适，而不权限直接绑定用户。当一位员工更换岗位时，只需要更改他所绑定的职位，对于新入职的员工，也只需要绑定他所入职岗位，他们就可以拥有该职位的所有权限。</p>
+<p>当然也会存在一些特殊的需要，比如说某人与同事都隶属于同一个职位，但他是老员工可以拥有更多的权限，这时可以增加一个新职位（通过制定职位级别）来区分他们的权限。</p>
+<p>又比如说，如果权限需要限制部门访问权限，而该部门内的职位只能设置当前部门对应的权限，如果有员工需要跨部门拥有其他权限时，可以通过更改用户账号绑定多职位的方式来实现，也就是说一个员工他只可以绑定一个主部门，但他可以同时拥有多个职位，这样它的权限就是多个职位权限的集合。</p>
+<p>这样在数据库表设计中需要调整的是新加入职位表（职位id、职位名称、部门id、菜单权限）和部门表（部门id、部门名称、部门编码、上一级部门id），并在用户表中增加职位id、部门id。</p>
+<p>职位表是绑定在部门下的权限角色，菜单权限字段直接与菜单项进行关联，不同职位可以设置不同的权限（设置可查看与操作的菜单项）</p>
+<p>职位表还需要存储与部门表的关联项：部门表id。如果为了不关联查询，也可以直接冗余存储部门编码、和部门名称字段（直接存储这个冗余字段，是为在需要显示职位所属部门时，不需要从部门表中关联查询，部门名称设置后更改的机会不大，但查询是每次都固定需要查询），所以冗余字段的设置减少了查询表次数，不过要在程序中确保两边表的数据更新一致。</p>
+<p>部门表它相当于权限分组，可以根据企业的部门结构，创建对应的结构记录，这样也方便企业对系统权限关系更加容易理解。当然也可以根据需要设置虚拟部门出来管理。</p>
+<p>为了以后扩展需要，需要添加部门编码字段，编码从01开始一直累加到99，当然如果部门超过99个的话，要么增加到3位数，要么当前框架已不能支持业务的发展需要思考新的架构了。</p>
+<p>编码每增加一级，在01后面自动增加”0x“，编码的长度跟部门分级深度相关。</p>
+<p>综合以上权限设计思路，最终整理出的数据表关系图为：<br><img src="https://user-images.githubusercontent.com/3664948/63416044-47e2d380-c431-11e9-867a-88539afccfbe.png" alt="image"></p>
+<p>整个权限控制就4张表，如果现实情况不太用得到组织部门，还可以把部门这张表去掉，并把职位表改成角色表，这样最精简的权限控制数据库表就设计完成了。</p>
+<hr>
+<p>上一节主要讲了后台数据库表的设计，这节主要根据4张表来设计界面，主要有用户管理页面、菜单管理页面、部门管理页面、职位管理页面。</p>
+<p>前端采用inspinia模板，有些插件略有增减，对话框采用layer，树菜单采用ztree，表格采用bootstrap-table，具体可以看源码。<br>express中采用ejs-mate模板，是ejs扩展版本，支持layout。</p>
+<h4 id="用户管理列表"><a href="#用户管理列表" class="headerlink" title="用户管理列表"></a>用户管理列表</h4><p><img src="https://user-images.githubusercontent.com/3664948/63746313-22dddd00-c8d7-11e9-9b6e-c4c8e1aa1499.png" alt="image"></p>
+<h4 id="编辑用户"><a href="#编辑用户" class="headerlink" title="编辑用户"></a>编辑用户</h4><p>编辑用户中主要选择用户所属部门和职位，其中职位是可以多个，采用树型结构勾选即可。<br><img src="https://user-images.githubusercontent.com/3664948/63418001-eae91c80-c434-11e9-8dd4-a6d7db1a6b2e.png" alt="image"></p>
+<h4 id="菜单管理列表"><a href="#菜单管理列表" class="headerlink" title="菜单管理列表"></a>菜单管理列表</h4><p>菜单列表采用bootstrap-table，并使用tree-grid插件显示菜单层级关系。<br><img src="https://user-images.githubusercontent.com/3664948/63417187-5e8a2a00-c433-11e9-92b7-78ff1faac9c0.png" alt="image"></p>
+<h4 id="编辑菜单"><a href="#编辑菜单" class="headerlink" title="编辑菜单"></a>编辑菜单</h4><p>编辑菜单主要是设置上下级菜单关系，页面地址和控件地址，如果这个菜单只有控件地址，不在左侧树菜单显示的，需要将是否显示设为隐藏。<br><img src="https://user-images.githubusercontent.com/3664948/63417265-824d7000-c433-11e9-9dff-4cb9dc973a65.png" alt="image"></p>
+<h4 id="部门管理列表"><a href="#部门管理列表" class="headerlink" title="部门管理列表"></a>部门管理列表</h4><p><img src="https://user-images.githubusercontent.com/3664948/63417320-9c874e00-c433-11e9-98a0-9777e5a8cf17.png" alt="image"></p>
+<h4 id="职位管理列表"><a href="#职位管理列表" class="headerlink" title="职位管理列表"></a>职位管理列表</h4><p>左侧可以通过点击部门树，来筛选该部门下的职位列表，方便显示。<br><img src="https://user-images.githubusercontent.com/3664948/63417380-b9bc1c80-c433-11e9-8701-967a2c9dfe05.png" alt="image"></p>
+<h4 id="编辑职位"><a href="#编辑职位" class="headerlink" title="编辑职位"></a>编辑职位</h4><p>编辑职位主要设置该职位名称及该职位所拥有的菜单项，菜单项是一个树型结构，打勾即表示该职位拥护此菜单项权限。<br><img src="https://user-images.githubusercontent.com/3664948/63417422-d193a080-c433-11e9-9c8a-a1e82d290bc2.png" alt="image"></p>
+<p>以上是最终所实现的界面效果。大部分都属于简单的列表和增删改页面，稍微复杂点是有些页面会涉及到树形菜单加载。</p>
+<p>用户登录后，就获得了用户所属职位的菜单项集合，在用户每次请求路由中需增加权限判断，我们写在中间件中。</p>
+<pre><code>/** 用户鉴权*/
+async authUserPermission(req, res, next) {
+    if (!req.session || !req.session.user || !req.session.user.id) {
+        return res.redirect(&#39;/login&#39;);
+    }
+    if (!req.session || !req.session.menu || req.session.menu.length == 0) {
+        return res.send(&#39;抱歉，您无此权限！请联系管理员&#39;);
+    }
+    let targetUrl = req.route.path;
+    let hasPower = false;
+    req.session.menu.forEach(el =&gt; {
+        if (el.page_url == targetUrl || el.control_url == targetUrl) {
+            hasPower = true;
+        }
+
+    });
+    if (!hasPower) {
+        if (req.xhr) {
+            return res.json({
+                state: false,
+                msg: &quot;抱歉，您无此权限！请联系管理员&quot;
+            });
+        }
+
+        return res.send(&#39;抱歉，您无此权限！请联系管理员&#39;);
+    }
+    next();
+}
+</code></pre><p>在每次路由请求中先判断用户权限，如有权限则往下执行正常逻辑，如无权限直接返回。</p>
+<pre><code>router.get(&#39;/system/userList&#39;, auth.authUserPermission, system.showUserList);
+router.get(&#39;/system/userEdit/:id&#39;, auth.authUserPermission, system.showUserEdit);
+</code></pre><p>test账号新增用户报无权限演示：<br><img src="https://user-images.githubusercontent.com/3664948/63736028-578c6d00-c8b4-11e9-9825-59d232eba992.png" alt="image"></p>
+<p>项目地址：<a href="https://github.com/ciey/NodeExpressAdmin" target="_blank" rel="noopener">https://github.com/ciey/NodeExpressAdmin</a></p>
+
+            </div>
+            <hr/>
+
+            
+
+            <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+
+<div id="article-share">
+    
+    <div class="social-share" data-disabled="qzone" data-wechat-qrcode-helper="<p>微信里点“发现”->“扫一扫”二维码便可查看分享。</p>"></div>
+    
+</div>
+
+<script src="/libs/share/js/social-share.min.js"></script>
+
+            
+
+
+        </div>
+    </div>
+
+    
+        <link rel="stylesheet" href="//ciey.gitee.io/static/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="//ciey.gitee.io/static/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: '77bf5387cd479c35248c',
+        clientSecret: 'e1b7c62361501ed1474761a466d91d371bd121bf',
+        repo: 'ciey.github.io',
+        owner: 'ciey',
+        admin: "ciey",
+        id: '2019-08-21T10-22-00',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/posts/express-async-error/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="//ciey.gitee.io/static/medias/featureimages/22.jpg" class="responsive-img" alt="express全局处理async error">
+                        
+                        <span class="card-title">express全局处理async error</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+express 结合 async/await 可以获得很好的开发体验。一般情况下 async/await 在错误处理方面，在最一开始使用Promise时，都习惯用Promise.catch()处理错误，之后async/await 流行后，
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-22
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/node/" class="post-category" target="_blank">
+                                    node
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/node/" target="_blank">
+                        <span class="chip bg-color">node</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/posts/adminer-install/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="//ciey.gitee.io/static/medias/featureimages/6.jpg" class="responsive-img" alt="Adminer轻量级MySQL管理工具">
+                        
+                        <span class="card-title">Adminer轻量级MySQL管理工具</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+Adminer工具名称：Adminer
+工具作用：图形化MySQL管理工具
+工具下载： https://www.adminer.org/
+Why is Adminer better than phpMyAdmin?
+优势：1. 安全, 2
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-24
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/工具/" class="post-category" target="_blank">
+                                    工具
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Adminer/" target="_blank">
+                        <span class="chip bg-color">Adminer</span>
+                    </a>
+                    
+                    <a href="/tags/MySQL/" target="_blank">
+                        <span class="chip bg-color">MySQL</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+</div>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fa fa-list"></i>
+    </a>
+</div>
+
+
+<script src="//ciey.gitee.io/static/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            // headingsOffset: -205,
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).slideUp(500);
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).slideDown(500);
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+    
+
+</main>
+
+
+<footer class="page-footer bg-color">
+    <div class="container row center-align">
+        <div class="col s12 m8 l8 copy-right">
+            &copy;<a href="https://ciey.github.io/" target="_blank">ciey</a> Powered By
+            <a href="https://hexo.io/" target="_blank">Hexo </a>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">matery</a> theme.
+
+            
+
+            
+			
+        </div>
+        <div class="col s12 m4 l4 social-link ">
+    <a href="https://github.com/ciey" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fa fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:myciey@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fa fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fa fa-rss"></i>
+    </a>
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+<!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fa fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
+});
+</script>
+<!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</div>
+
+
+<script src="//ciey.gitee.io/static/libs/materialize/materialize.min.js"></script>
+<script src="//ciey.gitee.io/static/libs/masonry/masonry.pkgd.min.js"></script>
+<script src="//ciey.gitee.io/static/libs/aos/aos.js"></script>
+<script src="//ciey.gitee.io/static/libs/scrollprogress/scrollProgress.min.js"></script>
+<script src="//ciey.gitee.io/static/libs/lightGallery/js/lightgallery-all.min.js"></script>
+<script src="/js/matery.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+
+
+</body>
+</html>
