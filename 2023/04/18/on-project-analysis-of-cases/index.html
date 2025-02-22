@@ -1,0 +1,3885 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+  <meta name="generator" content="Hexo 7.3.0">
+  <meta charset="utf-8">
+  <!-- SEO相关 -->
+  
+  <link rel="canonical" href="https://ciey.top/2023/04/18/on-project-analysis-of-cases/"/>
+  <!-- 渲染优化 -->
+    <meta http-equiv='x-dns-prefetch-control' content='on' />
+      <link rel='dns-prefetch' href='https://unpkg.com'>
+      <link rel="preconnect" href="https://unpkg.com" crossorigin>
+      <link rel='dns-prefetch' href='https://cdn.bootcdn.net'>
+      <link rel="preconnect" href="https://cdn.bootcdn.net" crossorigin>
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Content-Security-Policy" content=" default-src 'self' https:; block-all-mixed-content; base-uri 'self' https:; form-action 'self' https:; worker-src 'self' https:; connect-src 'self' https: *; img-src 'self' data: https: *; media-src 'self' https: *; font-src 'self' data: https: *; frame-src 'self' https: *; manifest-src 'self' https: *; child-src https:; script-src 'self' https: 'unsafe-inline' *; style-src 'self' https: 'unsafe-inline' *; ">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <!-- import head_begin begin -->
+  <!-- import head_begin end -->
+  <!-- Custom Files headBegin begin-->
+  
+  <!-- Custom Files headBegin end-->
+  <link rel="preload" href="/css/style.css" as="style">
+  <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1660614606622/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="https://unpkg.com/volantis-static@0.0.1660614606622/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+
+  <!-- feed -->
+  <!-- 页面元数据 -->
+  <title>信息系统项目管理师案例理论及常见问题 - ciey blog</title>
+  <meta name="keywords" content="案例理论及常见问题,null">
+  <meta desc name="description" content="ciey‘s blog - ciey - ciey blog">
+  
+<meta property="og:type" content="article">
+<meta property="og:title" content="信息系统项目管理师案例理论及常见问题">
+<meta property="og:url" content="https://ciey.top/2023/04/18/on-project-analysis-of-cases/index.html">
+<meta property="og:site_name" content="ciey blog">
+<meta property="og:description" content="项目管理概论1、PMO有支持型、控制型和指令型等3种。         类型 具体工作职责   支持型 担当顾问的角色，向项目提供模板、最佳实践、培训，以及来自其他项目的信息和经验教训（低）   控制型 不仅给项目提供支持，而且通过各种手段要求项目服从PMO的管理策略（中）   指令型 直接管理和控制项目（最高）   2、PMO的一个主要职能是通过各种方式向项目经理提供支持，包括:①对PMO所辖全">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2023-04-18T11:30:00.000Z">
+<meta property="article:modified_time" content="2025-02-22T11:46:17.617Z">
+<meta property="article:author" content="ciey">
+<meta property="article:tag" content="案例理论及常见问题">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+  <style>
+    /* 首屏样式 */
+    #safearea {
+  display: none;
+}
+:root {
+  --color-site-body: #f4f4f4;
+  --color-site-bg: #f4f4f4;
+  --color-site-inner: #fff;
+  --color-site-footer: #666;
+  --color-card: #fff;
+  --color-text: #444;
+  --color-block: #f6f6f6;
+  --color-inlinecode: #c74f00;
+  --color-codeblock: #fff7ea;
+  --color-h1: #3a3a3a;
+  --color-h2: #3a3a3a;
+  --color-h3: #333;
+  --color-h4: #444;
+  --color-h5: #555;
+  --color-h6: #666;
+  --color-p: #444;
+  --color-list: #666;
+  --color-list-hl: #30ad91;
+  --color-meta: #888;
+  --color-read-bkg: #e0d8c8;
+  --color-read-post: #f8f1e2;
+  --color-copyright-bkg: #f5f5f5;
+}
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+*::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+*::-webkit-scrollbar-track-piece {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background: #3dd9b6;
+  cursor: pointer;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: #ff5722;
+}
+html {
+  color: var(--color-text);
+  width: 100%;
+  height: 100%;
+  font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
+  font-size: 16px;
+}
+html >::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+html >::-webkit-scrollbar-track-piece {
+  background: transparent;
+}
+html >::-webkit-scrollbar-thumb {
+  background: #3dd9b6;
+  cursor: pointer;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+html >::-webkit-scrollbar-thumb:hover {
+  background: #ff5722;
+}
+body {
+  background-color: var(--color-site-body);
+  text-rendering: optimizelegibility;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body.modal-active {
+  overflow: hidden;
+}
+@media screen and (max-width: 680px) {
+  body.modal-active {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+a {
+  color: #2092ec;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+}
+a:hover {
+  color: #ff5722;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+ul,
+ol {
+  padding-left: 0;
+}
+ul li,
+ol li {
+  list-style: none;
+}
+header {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+}
+img {
+  border: 0;
+  background: none;
+  max-width: 100%;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  height: 0;
+  border: 0;
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-bottom: 1px solid rgba(68,68,68,0.1);
+}
+button,
+input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+  text-transform: none;
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+@supports (backdrop-filter: blur(20px)) {
+  .blur {
+    background: rgba(255,255,255,0.9) !important;
+    backdrop-filter: saturate(200%) blur(20px);
+  }
+}
+.shadow {
+  box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
+}
+.shadow.floatable {
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+}
+.shadow.floatable:hover {
+  box-shadow: 0 2px 4px 0px rgba(0,0,0,0.1), 0 4px 8px 0px rgba(0,0,0,0.1), 0 8px 16px 0px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 2px 4px 0px rgba(0,0,0,0.1), 0 4px 8px 0px rgba(0,0,0,0.1), 0 8px 16px 0px rgba(0,0,0,0.1);
+}
+#l_cover {
+  min-height: 64px;
+}
+.cover-wrapper {
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  height: 100vh;
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -khtml-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -o-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  color: var(--color-site-inner);
+  padding: 0 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: -100px;
+}
+.cover-wrapper .cover-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
+.cover-wrapper .cover-bg.lazyload:not(.loaded) {
+  opacity: 0;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+}
+.cover-wrapper .cover-bg.lazyload.loaded {
+  animation-delay: 0s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-name: fadeIn;
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -khtml-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -khtml-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -khtml-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -khtml-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+.cover-wrapper .cover-body {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.cover-wrapper#full {
+  height: calc(100vh + 100px);
+  padding-bottom: 100px;
+}
+.cover-wrapper#half {
+  max-height: 640px;
+  min-height: 400px;
+  height: calc(36vh - 64px + 200px);
+}
+.cover-wrapper #scroll-down {
+  width: 100%;
+  height: 64px;
+  position: absolute;
+  bottom: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+.cover-wrapper #scroll-down .scroll-down-effects {
+  color: #fff;
+  font-size: 24px;
+  line-height: 64px;
+  position: absolute;
+  width: 24px;
+  left: calc(50% - 12px);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  animation: scroll-down-effect 1.5s infinite;
+  -webkit-animation: scroll-down-effect 1.5s infinite;
+  -khtml-animation: scroll-down-effect 1.5s infinite;
+  -moz-animation: scroll-down-effect 1.5s infinite;
+  -o-animation: scroll-down-effect 1.5s infinite;
+  -ms-animation: scroll-down-effect 1.5s infinite;
+}
+@-moz-keyframes scroll-down-effect {
+  0% {
+    top: 0;
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+  50% {
+    top: -16px;
+    opacity: 0.4;
+    -webkit-opacity: 0.4;
+    -moz-opacity: 0.4;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@-webkit-keyframes scroll-down-effect {
+  0% {
+    top: 0;
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+  50% {
+    top: -16px;
+    opacity: 0.4;
+    -webkit-opacity: 0.4;
+    -moz-opacity: 0.4;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@-o-keyframes scroll-down-effect {
+  0% {
+    top: 0;
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+  50% {
+    top: -16px;
+    opacity: 0.4;
+    -webkit-opacity: 0.4;
+    -moz-opacity: 0.4;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@keyframes scroll-down-effect {
+  0% {
+    top: 0;
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+  50% {
+    top: -16px;
+    opacity: 0.4;
+    -webkit-opacity: 0.4;
+    -moz-opacity: 0.4;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+.cover-wrapper .cover-body {
+  margin-top: 64px;
+  margin-bottom: 100px;
+}
+.cover-wrapper .cover-body,
+.cover-wrapper .cover-body .top,
+.cover-wrapper .cover-body .bottom {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -khtml-justify-content: center;
+  -moz-justify-content: center;
+  -o-justify-content: center;
+  -ms-justify-content: center;
+  max-width: 100%;
+}
+.cover-wrapper .cover-body .bottom {
+  margin-top: 32px;
+}
+.cover-wrapper .cover-body .title {
+  font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
+  font-size: 3.125rem;
+  line-height: 1.2;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+.cover-wrapper .cover-body .subtitle {
+  font-size: 20px;
+}
+.cover-wrapper .cover-body .logo {
+  max-height: 120px;
+  max-width: calc(100% - 4 * 16px);
+}
+@media screen and (min-height: 1024px) {
+  .cover-wrapper .cover-body .title {
+    font-size: 3rem;
+  }
+  .cover-wrapper .cover-body .subtitle {
+    font-size: 1.05rem;
+  }
+  .cover-wrapper .cover-body .logo {
+    max-height: 150px;
+  }
+}
+.cover-wrapper .cover-body .m_search {
+  position: relative;
+  max-width: calc(100% - 16px);
+  width: 320px;
+  vertical-align: middle;
+}
+.cover-wrapper .cover-body .m_search .form {
+  position: relative;
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+  width: 100%;
+}
+.cover-wrapper .cover-body .m_search .icon,
+.cover-wrapper .cover-body .m_search .input {
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+}
+.cover-wrapper .cover-body .m_search .icon {
+  position: absolute;
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+  line-height: 2.5rem;
+  width: 32px;
+  top: 0;
+  left: 5px;
+  color: rgba(68,68,68,0.75);
+}
+.cover-wrapper .cover-body .m_search .input {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+  height: 2.5rem;
+  width: 100%;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-size: 0.875rem;
+  -webkit-appearance: none;
+  padding-left: 36px;
+  border-radius: 1.4rem;
+  -webkit-border-radius: 1.4rem;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
+  border: none;
+  color: var(--color-text);
+}
+@media screen and (max-width: 500px) {
+  .cover-wrapper .cover-body .m_search .input {
+    padding-left: 36px;
+  }
+}
+.cover-wrapper .cover-body .m_search .input:hover {
+  background: rgba(255,255,255,0.8);
+}
+.cover-wrapper .cover-body .m_search .input:focus {
+  background: #fff;
+}
+.cover-wrapper .list-h {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -khtml-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  align-items: stretch;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.cover-wrapper .list-h a {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1 0;
+  -ms-flex: 1 0;
+  flex: 1 0;
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+  font-weight: 600;
+}
+.cover-wrapper .list-h a img {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  margin: 4px;
+  min-width: 40px;
+  max-width: 44px;
+}
+@media screen and (max-width: 768px) {
+  .cover-wrapper .list-h a img {
+    min-width: 36px;
+    max-width: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .cover-wrapper .list-h a img {
+    margin: 2px 4px;
+    min-width: 32px;
+    max-width: 36px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .cover-wrapper .list-h a img {
+    min-width: 28px;
+    max-width: 32px;
+  }
+}
+.cover-wrapper {
+  max-width: 100%;
+}
+.cover-wrapper.search .bottom .menu {
+  margin-top: 16px;
+}
+.cover-wrapper.search .bottom .menu .list-h a {
+  white-space: nowrap;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  align-items: baseline;
+  padding: 2px;
+  margin: 4px;
+  color: var(--color-site-inner);
+  opacity: 0.75;
+  -webkit-opacity: 0.75;
+  -moz-opacity: 0.75;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  border-bottom: 2px solid transparent;
+}
+.cover-wrapper.search .bottom .menu .list-h a i {
+  margin-right: 4px;
+}
+.cover-wrapper.search .bottom .menu .list-h a p {
+  font-size: 0.9375rem;
+}
+.cover-wrapper.search .bottom .menu .list-h a:hover,
+.cover-wrapper.search .bottom .menu .list-h a.active,
+.cover-wrapper.search .bottom .menu .list-h a:active {
+  opacity: 1;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  border-bottom: 2px solid var(--color-site-inner);
+}
+@font-face {
+  font-family: 'UbuntuMono';
+  src: url("https://unpkg.com/volantis-static@0.0.1660614606622/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf");
+  font-weight: 'normal';
+  font-style: 'normal';
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Varela Round';
+  src: url("https://unpkg.com/volantis-static@0.0.1660614606622/media/fonts/VarelaRound/VarelaRound-Regular.ttf");
+  font-weight: 'normal';
+  font-style: 'normal';
+  font-display: swap;
+}
+.l_header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 64px;
+  background: var(--color-card);
+  box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
+}
+.l_header.auto {
+  transition: opacity 0.4s ease;
+  -webkit-transition: opacity 0.4s ease;
+  -khtml-transition: opacity 0.4s ease;
+  -moz-transition: opacity 0.4s ease;
+  -o-transition: opacity 0.4s ease;
+  -ms-transition: opacity 0.4s ease;
+  visibility: hidden;
+}
+.l_header.auto.show {
+  opacity: 1 !important;
+  -webkit-opacity: 1 !important;
+  -moz-opacity: 1 !important;
+  visibility: visible;
+}
+.l_header .container {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.l_header #wrapper {
+  height: 100%;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.l_header #wrapper .nav-main,
+.l_header #wrapper .nav-sub {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -khtml-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -o-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -khtml-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -o-justify-content: space-between;
+  -ms-justify-content: space-between;
+  align-items: center;
+}
+.l_header #wrapper .nav-main {
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+}
+.l_header #wrapper.sub .nav-main {
+  transform: translateY(-64px);
+  -webkit-transform: translateY(-64px);
+  -khtml-transform: translateY(-64px);
+  -moz-transform: translateY(-64px);
+  -o-transform: translateY(-64px);
+  -ms-transform: translateY(-64px);
+}
+.l_header #wrapper .nav-sub {
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+  opacity: 0;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  height: 64px;
+  width: calc(100% - 2 * 16px);
+  position: absolute;
+}
+.l_header #wrapper .nav-sub ::-webkit-scrollbar {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: none;
+}
+@media screen and (min-width: 2048px) {
+  .l_header #wrapper .nav-sub {
+    max-width: 55vw;
+    margin: auto;
+  }
+}
+.l_header #wrapper.sub .nav-sub {
+  opacity: 1;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+}
+.l_header #wrapper .title {
+  position: relative;
+  color: var(--color-text);
+  padding-left: 24px;
+  max-height: 64px;
+}
+.l_header #wrapper .nav-main .title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
+  line-height: 64px;
+  padding: 0 24px;
+  font-size: 1.25rem;
+  font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
+}
+.l_header #wrapper .nav-main .title img {
+  height: 64px;
+}
+.l_header .nav-sub {
+  max-width: 1280px;
+  margin: auto;
+}
+.l_header .nav-sub .title {
+  font-weight: bold;
+  font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
+  line-height: 1.2;
+  max-height: 64px;
+  white-space: normal;
+  flex-shrink: 1;
+}
+.l_header .switcher {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: none;
+  line-height: 64px;
+  align-items: center;
+}
+.l_header .switcher .s-toc {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .l_header .switcher .s-toc {
+    display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+    display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+    display: -ms-flexbox /* TWEENER - IE 10 */;
+    display: -webkit-flex /* NEW - Chrome */;
+    display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+    display: flex;
+  }
+}
+.l_header .switcher >li {
+  height: 48px;
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+  margin: 2px;
+}
+@media screen and (max-width: 500px) {
+  .l_header .switcher >li {
+    margin: 0 1px;
+    height: 48px;
+  }
+}
+.l_header .switcher >li >a {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -khtml-justify-content: center;
+  -moz-justify-content: center;
+  -o-justify-content: center;
+  -ms-justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  padding: 0.85em 1.1em;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border: none;
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+  color: #3dd9b6;
+}
+.l_header .switcher >li >a:hover {
+  border: none;
+}
+.l_header .switcher >li >a.active,
+.l_header .switcher >li >a:active {
+  border: none;
+  background: var(--color-site-bg);
+}
+@media screen and (max-width: 500px) {
+  .l_header .switcher >li >a {
+    width: 36px;
+    height: 48px;
+  }
+}
+.l_header .nav-sub .switcher {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+}
+.l_header .m_search {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+  height: 64px;
+  width: 240px;
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+}
+@media screen and (max-width: 1024px) {
+  .l_header .m_search {
+    width: 44px;
+    min-width: 44px;
+  }
+  .l_header .m_search input::placeholder {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+  }
+  .l_header .m_search:hover {
+    width: 240px;
+  }
+  .l_header .m_search:hover input::placeholder {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@media screen and (min-width: 500px) {
+  .l_header .m_search:hover .input {
+    width: 100%;
+  }
+  .l_header .m_search:hover .input::placeholder {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@media screen and (max-width: 500px) {
+  .l_header .m_search {
+    min-width: 0;
+  }
+  .l_header .m_search input::placeholder {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+.l_header .m_search .form {
+  position: relative;
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.l_header .m_search .icon {
+  position: absolute;
+  width: 36px;
+  left: 5px;
+  color: var(--color-meta);
+}
+@media screen and (max-width: 500px) {
+  .l_header .m_search .icon {
+    display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+    display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+    display: none;
+  }
+}
+.l_header .m_search .input {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  line-height: 1.3;
+  width: 100%;
+  color: var(--color-text);
+  background: #fafafa;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding-left: 40px;
+  font-size: 0.875rem;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border: none;
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+}
+@media screen and (min-width: 500px) {
+  .l_header .m_search .input:focus {
+    box-shadow: 0 4px 8px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 4px 8px 0px rgba(0,0,0,0.1);
+  }
+}
+@media screen and (max-width: 500px) {
+  .l_header .m_search .input {
+    background: var(--color-block);
+    padding-left: 8px;
+    border: none;
+  }
+  .l_header .m_search .input:hover,
+  .l_header .m_search .input:focus {
+    border: none;
+  }
+}
+@media (max-width: 500px) {
+  .l_header .m_search {
+    left: 0;
+    width: 0;
+    overflow: hidden;
+    position: absolute;
+    background: #fff;
+    transition: all 0.28s ease;
+    -webkit-transition: all 0.28s ease;
+    -khtml-transition: all 0.28s ease;
+    -moz-transition: all 0.28s ease;
+    -o-transition: all 0.28s ease;
+    -ms-transition: all 0.28s ease;
+  }
+  .l_header .m_search .input {
+    border-radius: 32px;
+    -webkit-border-radius: 32px;
+    margin-left: 16px;
+    padding-left: 16px;
+  }
+  .l_header.z_search-open .m_search {
+    width: 100%;
+  }
+  .l_header.z_search-open .m_search .input {
+    width: calc(100% - 120px);
+  }
+}
+ul.m-pc >li>a {
+  color: inherit;
+  border-bottom: 2px solid transparent;
+}
+ul.m-pc >li>a:active,
+ul.m-pc >li>a.active {
+  border-bottom: 2px solid #3dd9b6;
+}
+ul.m-pc li:hover >ul.list-v,
+ul.list-v li:hover >ul.list-v {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+}
+ul.nav-list-h {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+  align-items: stretch;
+}
+ul.nav-list-h>li {
+  position: relative;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -khtml-justify-content: center;
+  -moz-justify-content: center;
+  -o-justify-content: center;
+  -ms-justify-content: center;
+  height: 100%;
+  line-height: 2.4;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+ul.nav-list-h>li >a {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 600;
+}
+ul.list-v {
+  z-index: 1;
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: none;
+  position: absolute;
+  background: var(--color-card);
+  box-shadow: 0 2px 4px 0px rgba(0,0,0,0.08), 0 4px 8px 0px rgba(0,0,0,0.08), 0 8px 16px 0px rgba(0,0,0,0.08);
+  -webkit-box-shadow: 0 2px 4px 0px rgba(0,0,0,0.08), 0 4px 8px 0px rgba(0,0,0,0.08), 0 8px 16px 0px rgba(0,0,0,0.08);
+  margin-top: -6px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: 8px 0;
+}
+ul.list-v.show {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+}
+ul.list-v hr {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+ul.list-v >li {
+  white-space: nowrap;
+  word-break: keep-all;
+}
+ul.list-v >li.header {
+  font-size: 0.78125rem;
+  font-weight: bold;
+  line-height: 2em;
+  color: var(--color-meta);
+  margin: 8px 16px 4px;
+}
+ul.list-v >li.header i {
+  margin-right: 8px;
+}
+ul.list-v >li ul {
+  margin-left: 0;
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: none;
+  margin-top: -40px;
+}
+ul.list-v .aplayer-container {
+  min-height: 64px;
+  padding: 6px 16px;
+}
+ul.list-v >li>a {
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+  color: var(--color-list);
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 36px;
+  padding: 0 20px 0 16px;
+  text-overflow: ellipsis;
+  margin: 0 4px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+@media screen and (max-width: 1024px) {
+  ul.list-v >li>a {
+    line-height: 40px;
+  }
+}
+ul.list-v >li>a >i {
+  margin-right: 8px;
+}
+ul.list-v >li>a:active,
+ul.list-v >li>a.active {
+  color: var(--color-list-hl);
+}
+ul.list-v >li>a:hover {
+  color: var(--color-list-hl);
+  background: var(--color-site-bg);
+}
+.l_header .menu >ul>li>a {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+  padding: 0 8px;
+}
+.l_header .menu >ul>li>a >i {
+  margin-right: 4px;
+}
+.l_header ul.nav-list-h>li {
+  color: var(--color-list);
+  line-height: 64px;
+}
+.l_header ul.nav-list-h>li >a {
+  max-height: 64px;
+  overflow: hidden;
+  color: inherit;
+}
+.l_header ul.nav-list-h>li >a:active,
+.l_header ul.nav-list-h>li >a.active {
+  color: #3dd9b6;
+}
+.l_header ul.nav-list-h>li:hover>a {
+  color: var(--color-list-hl);
+}
+.l_header ul.nav-list-h>li i.music {
+  animation: rotate-effect 1.5s linear infinite;
+  -webkit-animation: rotate-effect 1.5s linear infinite;
+  -khtml-animation: rotate-effect 1.5s linear infinite;
+  -moz-animation: rotate-effect 1.5s linear infinite;
+  -o-animation: rotate-effect 1.5s linear infinite;
+  -ms-animation: rotate-effect 1.5s linear infinite;
+}
+@-moz-keyframes rotate-effect {
+  0% {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -khtml-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -khtml-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -khtml-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -khtml-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -khtml-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate-effect {
+  0% {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -khtml-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -khtml-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -khtml-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -khtml-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -khtml-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+  }
+}
+@-o-keyframes rotate-effect {
+  0% {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -khtml-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -khtml-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -khtml-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -khtml-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -khtml-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+  }
+}
+@keyframes rotate-effect {
+  0% {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -khtml-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -khtml-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -khtml-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -khtml-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -khtml-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+  }
+}
+.menu-phone li ul.list-v {
+  right: calc(100% - 0.5 * 16px);
+}
+.menu-phone li ul.list-v ul {
+  right: calc(100% - 0.5 * 16px);
+}
+#wrapper .m_search {
+  margin-left: auto;
+  margin-right: 16px;
+}
+#wrapper .menu li ul.list-v {
+  right: 0;
+}
+#wrapper .menu li ul.list-v ul {
+  right: calc(100% - 0.5 * 16px);
+}
+.menu-phone {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: none;
+  margin-top: 16px;
+  right: 8px;
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+}
+.menu-phone ul {
+  right: calc(100% - 0.5 * 16px);
+}
+@media screen and (max-width: 500px) {
+  .menu-phone {
+    display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+    display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+    display: block;
+  }
+}
+@media screen and (max-width: 500px) {
+  .l_header .container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .l_header #wrapper .nav-main .title {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .l_header #wrapper .nav-sub {
+    width: 100%;
+  }
+  .l_header #wrapper .nav-sub .title {
+    overflow-y: scroll;
+    margin-top: 2px;
+    padding: 8px 16px;
+  }
+  .l_header #wrapper .switcher {
+    display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+    display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+    display: -ms-flexbox /* TWEENER - IE 10 */;
+    display: -webkit-flex /* NEW - Chrome */;
+    display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+    display: flex;
+    margin-right: 8px;
+  }
+  .l_header .menu {
+    display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+    display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .list-v li {
+    max-width: 270px;
+  }
+}
+#u-search {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 60px 20px;
+  z-index: 1001;
+}
+@media screen and (max-width: 680px) {
+  #u-search {
+    padding: 0px;
+  }
+}
+
+  </style>
+  <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css"></noscript>
+  
+<script>
+if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode))
+    document.write(
+	'<style>'+
+		'html{'+
+			'overflow-x: hidden !important;'+
+			'overflow-y: hidden !important;'+
+		'}'+
+		'.kill-ie{'+
+			'text-align:center;'+
+			'height: 100%;'+
+			'margin-top: 15%;'+
+			'margin-bottom: 5500%;'+
+		'}'+
+    '.kill-t{'+
+      'font-size: 2rem;'+
+    '}'+
+    '.kill-c{'+
+      'font-size: 1.2rem;'+
+    '}'+
+		'#l_header,#l_body{'+
+			'display: none;'+
+		'}'+
+	'</style>'+
+    '<div class="kill-ie">'+
+        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
+        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解详情 ></strong></a>`+
+    '</div>');
+</script>
+
+
+<noscript>
+	<style>
+		html{
+			overflow-x: hidden !important;
+			overflow-y: hidden !important;
+		}
+		.kill-noscript{
+			text-align:center;
+			height: 100%;
+			margin-top: 15%;
+			margin-bottom: 5500%;
+		}
+    .kill-t{
+      font-size: 2rem;
+    }
+    .kill-c{
+      font-size: 1.2rem;
+    }
+		#l_header,#l_body{
+			display: none;
+		}
+	</style>
+    <div class="kill-noscript">
+        <span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>
+        <span class="kill-c">本页面需要浏览器支持（启用）JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情 ></strong></a>
+    </div>
+</noscript>
+
+
+  <script>
+  /************这个文件存放不需要重载的全局变量和全局函数*********/
+  window.volantis = {}; // volantis 全局变量
+  volantis.debug = "env"; // 调试模式
+  volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
+  /******************** volantis.dom.$ ********************************/
+  // 注：这里没有选择器，也没有forEach一次只处理一个dom，这里重新封装主题常用的dom方法，返回的是dom对象，对象包含了以下方法，同时保留dom的原生API
+  function volantisDom(ele) {
+    if (!ele) ele = document.createElement("div")
+    this.ele = ele;
+    // ==============================================================
+    this.ele.find = (c) => {
+      let q = this.ele.querySelector(c)
+      if (q)
+        return new volantisDom(q)
+    }
+    // ==============================================================
+    this.ele.hasClass = (c) => {
+      return this.ele.className.match(new RegExp('(\\s|^)' + c + '(\\s|$)'));
+    }
+    this.ele.addClass = (c) => {
+      this.ele.classList.add(c);
+      return this.ele
+    }
+    this.ele.removeClass = (c) => {
+      this.ele.classList.remove(c);
+      return this.ele
+    }
+    this.ele.toggleClass = (c) => {
+      if (this.ele.hasClass(c)) {
+        this.ele.removeClass(c)
+      } else {
+        this.ele.addClass(c)
+      }
+      return this.ele
+    }
+    // ==============================================================
+    this.ele.on = (c, f) => {
+      this.ele.addEventListener(c, f, false)
+      return this.ele
+    }
+    this.ele.click = (f, r) => {
+      this.ele.on("click", f, r)
+      return this.ele
+    }
+    this.ele.scroll = (f, r) => {
+      this.ele.on("scroll", f, r)
+      return this.ele
+    }
+    // ==============================================================
+    this.ele.html = (c) => {
+      // if(c=== undefined){
+      //   return this.ele.innerHTML
+      // }else{
+      this.ele.innerHTML = c
+      return this.ele
+      // }
+    }
+    // ==============================================================
+    this.ele.hide = (c) => {
+      this.ele.style.display = "none"
+      return this.ele
+    }
+    this.ele.show = (c) => {
+      this.ele.style.display = "block"
+      return this.ele
+    }
+    // ==============================================================
+    return this.ele
+  }
+  volantis.dom.$ = (ele) => {
+    return !!ele ? new volantisDom(ele) : null;
+  }
+  /******************** RunItem ********************************/
+  function RunItem() {
+    this.list = []; // 存放回调函数
+    this.start = () => {
+      for (var i = 0; i < this.list.length; i++) {
+        this.list[i].run();
+      }
+    };
+    this.push = (fn, name, setRequestAnimationFrame = true) => {
+      let myfn = fn
+      if (setRequestAnimationFrame) {
+        myfn = () => {
+          volantis.requestAnimationFrame(fn)
+        }
+      }
+      var f = new Item(myfn, name);
+      this.list.push(f);
+    };
+    this.remove = (name) => {
+      for (let index = 0; index < this.list.length; index++) {
+        const e = this.list[index];
+        if (e.name == name) {
+          this.list.splice(index, 1);
+        }
+      }
+    }
+    // 构造一个可以run的对象
+    function Item(fn, name) {
+      // 函数名称
+      this.name = name || fn.name;
+      // run方法
+      this.run = () => {
+        try {
+          fn()
+        } catch (error) {
+          console.log(error);
+        }
+      };
+    }
+  }
+  /******************** RightMenu ********************************/
+  // volantis.rightmenu.handle(callBack[,"callBackName"]) 外部菜单项控制
+  // 可在 volantis.mouseEvent 处获取右键事件
+  volantis.rightmenu = {};
+  volantis.rightmenu.method = {
+    handle: new RunItem(),
+  }
+  volantis.rightmenu = Object.assign(volantis.rightmenu, {
+    handle: volantis.rightmenu.method.handle.push,
+  });
+  /********************  Dark Mode  ********************************/
+  // /layout/_partial/scripts/darkmode.ejs
+  // volantis.dark.mode 当前模式 dark or light
+  // volantis.dark.toggle() 暗黑模式触发器
+  // volantis.dark.push(callBack[,"callBackName"]) 传入触发器回调函数
+  volantis.dark = {};
+  volantis.dark.method = {
+    toggle: new RunItem(),
+  };
+  volantis.dark = Object.assign(volantis.dark, {
+    push: volantis.dark.method.toggle.push,
+  });
+  /********************  Message  ********************************/
+  // VolantisApp.message
+  /********************  isMobile  ********************************/
+  // /source/js/app.js
+  // volantis.isMobile
+  // volantis.isMobileOld
+  /********************脚本动态加载函数********************************/
+  // volantis.js(src, cb)  cb 可以传入onload回调函数 或者 JSON对象 例如: volantis.js("src", ()=>{}) 或 volantis.js("src", {defer:true,onload:()=>{}})
+  // volantis.css(src)
+
+  // 返回Promise对象，如下方法同步加载资源，这利于处理文件资源之间的依赖关系，例如：APlayer 需要在 MetingJS 之前加载
+  // (async () => {
+  //     await volantis.js("...theme.plugins.aplayer.js.aplayer...")
+  //     await volantis.js("...theme.plugins.aplayer.js.meting...")
+  // })();
+
+  // 已经加入了setTimeout
+  volantis.js = (src, cb) => {
+    return new Promise(resolve => {
+      setTimeout(function () {
+        var HEAD = document.getElementsByTagName("head")[0] || document.documentElement;
+        var script = document.createElement("script");
+        script.setAttribute("type", "text/javascript");
+        if (cb) {
+          if (JSON.stringify(cb)) {
+            for (let p in cb) {
+              if (p == "onload") {
+                script[p] = () => {
+                  cb[p]()
+                  resolve()
+                }
+              } else {
+                script[p] = cb[p]
+                script.onload = resolve
+              }
+            }
+          } else {
+            script.onload = () => {
+              cb()
+              resolve()
+            };
+          }
+        } else {
+          script.onload = resolve
+        }
+        script.setAttribute("src", src);
+        HEAD.appendChild(script);
+      });
+    });
+  }
+  volantis.css = (src) => {
+    return new Promise(resolve => {
+      setTimeout(function () {
+        var link = document.createElement('link');
+        link.rel = "stylesheet";
+        link.href = src;
+        link.onload = resolve;
+        document.getElementsByTagName("head")[0].appendChild(link);
+      });
+    });
+  }
+  /********************按需加载的插件********************************/
+  // volantis.import.jQuery().then(()=>{})
+  volantis.import = {
+    jQuery: () => {
+      if (typeof jQuery == "undefined") {
+        return volantis.js("https://unpkg.com/jquery@3.7.1/dist/jquery.min.js")
+      } else {
+        return new Promise(resolve => {
+          resolve()
+        });
+      }
+    }
+  }
+  /********************** requestAnimationFrame ********************************/
+  // 1、requestAnimationFrame 会把每一帧中的所有 DOM 操作集中起来，在一次重绘或回流中就完成，并且重绘或回流的时间间隔紧紧跟随浏览器的刷新频率，一般来说，这个频率为每秒60帧。
+  // 2、在隐藏或不可见的元素中，requestAnimationFrame 将不会进行重绘或回流，这当然就意味着更少的的 cpu，gpu 和内存使用量。
+  volantis.requestAnimationFrame = (fn) => {
+    if (!window.requestAnimationFrame) {
+      window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame;
+    }
+    window.requestAnimationFrame(fn)
+  }
+  /************************ layoutHelper *****************************************/
+  volantis.layoutHelper = (helper, html, opt) => {
+    opt = Object.assign({ clean: false}, opt)
+    function myhelper(helper, html, clean) {
+      volantis.tempDiv = document.createElement("div");
+      volantis.tempDiv.innerHTML = html;
+      let layoutHelper = document.querySelector("#layoutHelper-" + helper)
+      if (layoutHelper) {
+        if (clean) {
+          layoutHelper.innerHTML = ""
+        }
+        layoutHelper.append(volantis.tempDiv);
+      }
+    }
+    myhelper(helper, html, opt.clean)
+  }
+  /****************************** 滚动事件处理 ****************************************/
+  volantis.scroll = {
+    engine: new RunItem(),
+    unengine: new RunItem(),
+  };
+  volantis.scroll = Object.assign(volantis.scroll, {
+    push: volantis.scroll.engine.push,
+  });
+  // 滚动条距离顶部的距离
+  volantis.scroll.getScrollTop = () => {
+    let scrollPos;
+    if (window.pageYOffset) {
+      scrollPos = window.pageYOffset;
+    } else if (document.compatMode && document.compatMode != 'BackCompat') {
+      scrollPos = document.documentElement.scrollTop;
+    } else if (document.body) {
+      scrollPos = document.body.scrollTop;
+    }
+    return scrollPos;
+  }
+  volantis.scroll.scrollHeight = function () {
+    return Math.max(
+      document.body.scrollHeight,
+      document.documentElement.scrollHeight,
+    )
+  }
+  volantis.scroll.offsetHeight = function () {
+    return Math.max(
+      document.body.offsetHeight,
+      document.documentElement.offsetHeight,
+      document.body.clientHeight,
+      document.documentElement.clientHeight
+    )
+  }
+  volantis.scroll.progress = function () {
+    return volantis.scroll.getScrollTop() / (volantis.scroll.scrollHeight() - volantis.scroll.offsetHeight())
+  }
+  // 使用 requestAnimationFrame 处理滚动事件
+  // `volantis.scroll.del` 中存储了一个数值, 该数值检测一定时间间隔内滚动条滚动的位移, 数值的检测频率是浏览器的刷新频率. 数值为正数时, 表示向下滚动. 数值为负数时, 表示向上滚动.
+  volantis.scroll.handleScrollEvents = () => {
+    volantis.scroll.lastScrollTop = volantis.scroll.getScrollTop()
+    function loop() {
+      const scrollTop = volantis.scroll.getScrollTop();
+      if (volantis.scroll.lastScrollTop !== scrollTop) {
+        volantis.scroll.del = scrollTop - volantis.scroll.lastScrollTop;
+        volantis.scroll.lastScrollTop = scrollTop;
+        // if (volantis.scroll.del > 0) {
+        //   console.log("向下滚动");
+        // } else {
+        //   console.log("向上滚动");
+        // }
+        // 注销过期的unengine未滚动事件
+        volantis.scroll.unengine.list = []
+        volantis.scroll.engine.start();
+      } else {
+        volantis.scroll.unengine.start();
+      }
+      volantis.requestAnimationFrame(loop)
+    }
+    volantis.requestAnimationFrame(loop)
+  }
+  volantis.scroll.handleScrollEvents()
+  volantis.scroll.ele = null;
+  // 触发页面滚动至目标元素位置
+  volantis.scroll.to = (ele, option = {}) => {
+    if (!ele) return;
+    volantis.scroll.ele = ele;
+    // 默认配置
+    opt = {
+      top: ele.getBoundingClientRect().top + document.documentElement.scrollTop,
+      behavior: "smooth"
+    }
+    // 定义配置
+    if ("top" in option) {
+      opt.top = option.top
+    }
+    if ("behavior" in option) {
+      opt.behavior = option.behavior
+    }
+    if ("addTop" in option) {
+      opt.top += option.addTop
+    }
+    if (!("observerDic" in option)) {
+      option.observerDic = 100
+    }
+    // 滚动
+    window.scrollTo(opt);
+    // 监视器
+    // 监视并矫正元素滚动到指定位置
+    // 用于处理 lazyload 引起的 cls 导致的定位失败问题
+    // option.observer = false
+    if (option.observer) {
+      setTimeout(() => {
+        if (volantis.scroll.ele != ele) {
+          return
+        }
+        volantis.scroll.unengine.push(() => {
+          let me = ele.getBoundingClientRect().top
+          if (!(me >= -option.observerDic && me <= option.observerDic)) {
+            volantis.scroll.to(ele, option)
+          }
+          volantis.scroll.unengine.remove("unengineObserver")
+        }, "unengineObserver")
+      }, 1000)
+    }
+  }
+  /********************** Content Visibility ********************************/
+  // 见 source/css/first.styl 如果遇到任何问题 删除 .post-story 即可
+  // 一个元素被声明 content-visibility 属性后 如果元素不在 viewport 中 浏览器不会计算其后代元素样式和属性 从而节省 Style & Layout 耗时
+  // content-visibility 的副作用: 锚点失效 等等(实验初期 暂不明确), 使用此方法清除样式
+  volantis.cleanContentVisibility = () => {
+    if (document.querySelector(".post-story")) {
+      console.log("cleanContentVisibility");
+      document.querySelectorAll(".post-story").forEach(e => {
+        e.classList.remove("post-story")
+      })
+    }
+  }
+  /******************************************************************************/
+  /******************************************************************************/
+  /******************************************************************************/
+  //图像加载出错时的处理
+  function errorImgAvatar(img) {
+    img.src = "https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg";
+    img.onerror = null;
+  }
+  function errorImgCover(img) {
+    img.src = "https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg";
+    img.onerror = null;
+  }
+  /******************************************************************************/
+</script>
+
+<script>
+  window.pdata={}
+  pdata.ispage=true;
+  pdata.commentPath="";
+  pdata.commentPlaceholder="";
+  pdata.commentConfig={};
+  volantis.GLOBAL_CONFIG ={
+    root: '/',
+    debug: "env",
+    default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
+    lastupdate: new Date(1740225641810),
+    cdn: {
+      izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
+      izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
+      fancybox_css: 'https://unpkg.com/@fancyapps/ui@5.0.36/dist/fancybox/fancybox.css',
+      fancybox_js: 'https://unpkg.com/@fancyapps/ui@5.0.36/dist/fancybox/fancybox.umd.js'
+    },
+    sidebar: {
+      for_page: ["blogger","category","tagcloud","donate"],
+      for_post: ["toc"],
+      webinfo: {
+        lastupd: {
+          enable: true,
+          friendlyShow: true
+        },
+        runtime: {
+          data: "2018/10/23",
+          unit: "天"
+        }
+      }
+    },
+    plugins: {
+      message: {"enable":true,"icon":{"default":"fa-solid fa-info-circle light-blue","quection":"fa-solid fa-question-circle light-blue"},"time":{"default":5000,"quection":20000},"position":"topRight","transitionIn":"bounceInLeft","transitionOut":"fadeOutRight","titleColor":"var(--color-text)","messageColor":"var(--color-text)","backgroundColor":"var(--color-card)","zindex":2147483647,"copyright":{"enable":true,"title":"知识共享许可协议","message":"请遵守 CC BY-NC-SA 4.0 协议。","icon":"far fa-copyright light-blue"},"aplayer":{"enable":true,"play":"fa-solid fa-play","pause":"fa-solid fa-pause"},"rightmenu":{"enable":true,"notice":true}},
+      
+      
+    },
+    search: {
+      
+
+      
+        dataPath: (("/" || "/").endsWith("/") ? "/" || "/" : "//" || "/") + "content.json",
+      
+
+      
+    },
+    languages: {
+      
+        search: {
+          hits_empty: "找不到您查询的内容：${query}",
+          hits_stats: "找到 ${hits} 条结果，用时 ${time} 毫秒",
+        }
+      
+    }
+  }
+</script>
+  <!-- import head_end begin -->
+  <!-- import head_end end -->
+  <!-- Custom Files headEnd begin-->
+  
+  <!-- Custom Files headEnd end-->
+</head>
+  <body itemscope itemtype="https://schema.org.cn/WebPage">
+    <!-- import body_begin begin-->
+    <!-- import body_begin end-->
+    <!-- Custom Files bodyBegin begin-->
+    
+    <!-- Custom Files bodyBegin end-->
+    <header itemscope itemtype="https://schema.org.cn/WPHeader" id="l_header" class="l_header always shadow floatable blur show"  >
+  <div class='container'>
+  <div id='wrapper'>
+    <div class='nav-sub'>
+      <p class="title"></p>
+      <ul class='switcher nav-list-h m-phone'>
+        <li><a id="s-comment" class="fa-solid fa-comments fa-fw" target="_self" title="comment"></a></li>
+        
+          <li><a id="s-toc" class="s-toc fa-solid fa-list fa-fw" target="_self" title="toc"></a></li>
+        
+      </ul>
+    </div>
+		<div class="nav-main">
+      
+        
+        <a class="title flat-box" target="_self" href='/'>
+          
+          
+          
+            ciey blog
+          
+        </a>
+      
+
+			<div class='menu navigation'>
+				<ul class='nav-list-h m-pc'>
+          
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/" title="博客"
+                  
+                  
+                  
+                    active-action="action-home"
+                  >
+                  <i class='fa-solid fa-rss fa-fw'></i>博客
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/categories/" title="分类"
+                  
+                  
+                  
+                    active-action="action-categories"
+                  >
+                  <i class='fa-solid fa-folder-open fa-fw'></i>分类
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/tags/" title="标签"
+                  
+                  
+                  
+                    active-action="action-tags"
+                  >
+                  <i class='fa-solid fa-tags fa-fw'></i>标签
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/archives/" title="归档"
+                  
+                  
+                  
+                    active-action="action-archives"
+                  >
+                  <i class='fa-solid fa-archive fa-fw'></i>归档
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/tools/" title="工具"
+                  
+                  
+                  
+                    active-action="action-tools"
+                  >
+                  <i class='fa-solid fa-link fa-fw'></i>工具
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/about/" title="关于"
+                  
+                  
+                  
+                    active-action="action-about"
+                  >
+                  <i class='fa-solid fa-info-circle fa-fw'></i>关于
+                </a>
+                
+              </li>
+            
+          
+          
+				</ul>
+			</div>
+      
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <i class="icon fa-solid fa-search fa-fw"></i>
+          <input type="text" class="input u-search-input" placeholder="Search..." />
+        </form>
+      </div>
+      
+
+			<ul class='switcher nav-list-h m-phone'>
+				
+					<li><a class="s-search fa-solid fa-search fa-fw" target="_self" title="search"></a></li>
+				
+				<li>
+          <a class="s-menu fa-solid fa-bars fa-fw" target="_self" title="menu"></a>
+          <ul class="menu-phone list-v navigation white-box">
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/" title="博客"
+                  
+                  
+                  
+                    active-action="action-home"
+                  >
+                  <i class='fa-solid fa-rss fa-fw'></i>博客
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/categories/" title="分类"
+                  
+                  
+                  
+                    active-action="action-categories"
+                  >
+                  <i class='fa-solid fa-folder-open fa-fw'></i>分类
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/tags/" title="标签"
+                  
+                  
+                  
+                    active-action="action-tags"
+                  >
+                  <i class='fa-solid fa-tags fa-fw'></i>标签
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/archives/" title="归档"
+                  
+                  
+                  
+                    active-action="action-archives"
+                  >
+                  <i class='fa-solid fa-archive fa-fw'></i>归档
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/tools/" title="工具"
+                  
+                  
+                  
+                    active-action="action-tools"
+                  >
+                  <i class='fa-solid fa-link fa-fw'></i>工具
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/about/" title="关于"
+                  
+                  
+                  
+                    active-action="action-about"
+                  >
+                  <i class='fa-solid fa-info-circle fa-fw'></i>关于
+                </a>
+                
+              </li>
+            
+          
+            
+          </ul>
+        </li>
+			</ul>
+
+      <!-- Custom Files header begin -->
+      
+      <!-- Custom Files header end -->
+		</div>
+	</div>
+  </div>
+</header>
+
+    <div id="l_body">
+      <div id="l_cover">
+  
+</div>
+
+      <div id="safearea">
+        <div class="body-wrapper">
+          
+<div id="l_main" class=''>
+  <article itemscope itemtype="https://schema.org.cn/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://ciey.top/2023/04/18/on-project-analysis-of-cases/">
+  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
+    <meta itemprop="name" content="ciey blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
+    <meta itemprop="name" content="ciey blog">
+    <meta itemprop="description" content="ciey‘s blog">
+  </span>
+  
+
+
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  <div class="article-meta" id="top">
+    
+    
+    
+      <h1 class="title" itemprop="name headline">
+        信息系统项目管理师案例理论及常见问题
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="https://schema.org.cn/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">ciey</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  
+  
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/">项目管理</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+        <a href="/categories/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/" itemprop="url"><span itemprop="name">项目管理</span></a>
+      </span>
+    
+  </div>
+  
+
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-04-18T19:30:00+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2023年4月18日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+      
+      <span id="artalk_visitors" data-page-key="/2023/04/18/on-project-analysis-of-cases/">
+        <i class="fa-light fa-loader fa-spin fa-fw" aria-hidden="true"></i>
+      </span>
+        
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h3 id="项目管理概论"><a href="#项目管理概论" class="headerlink" title="项目管理概论"></a>项目管理概论</h3><p>1、PMO有支持型、控制型和指令型等3种。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>类型</td>
+<td>具体工作职责</td>
+</tr>
+<tr>
+<td>支持型</td>
+<td>担当顾问的角色，向项目提供模板、最佳实践、培训，以及来自其他项目的信息和经验教训（低）</td>
+</tr>
+<tr>
+<td>控制型</td>
+<td>不仅给项目提供支持，而且通过各种手段要求项目服从PMO的管理策略（中）</td>
+</tr>
+<tr>
+<td>指令型</td>
+<td>直接管理和控制项目（最高）</td>
+</tr>
+</tbody></table>
+<p>2、PMO的一个主要职能是通过各种方式向项目经理<span class='p red'>提供支持</span>，包括:①对PMO所辖全部项目的共享资源进行管理;②识别和制定项目管理方法、最佳实践和标准;③指导、辅导、培训 和监督;④通过项目审计，监督项目对项目管理标准、政策、程序和模板的合规性;⑤制定和管理项目政策、程序、模板及其他共享的文件（组织过程资产）；⑥对跨项目的沟通进行协调等。</p>
+<h3 id="立项管理"><a href="#立项管理" class="headerlink" title="立项管理"></a>立项管理</h3><p>1、立项管理常见的问题：<br>（1）立项中请应由（建设方）甲方（非承建方，即乙方）的上级主管单位，而非甲方总经理批准。<br>（2）做完初步可以行研究就立马上马。<br>（3）未做详细可行性研究就生成可行性研究报告<br>（4）可行性研究报告未经评审<br>（5）仅根据项目符合国家政策就判断项目肯定要上马，判断依据过于单一<br>（6）可行性分析的中请金额比中请下来的金额超过了上下10%的浮动，还继续使用，没有重写<br>（7）可行性分析的中请金额比中请下来的金额没超过了上下10%浮动，但没补充内容<br>（8）投标由软件工程师负责不合适，缺少相关经验（专人专事）<br>（9）仅从技术角度分析项目可行不全面，需要综合考虑经济、技术、社会等因素。<br>（10）投标文件不能单独完成，需要比较有经验的各领域专家共同参与编写<br>（11）未编写项目建议书<br>（12）未进行项目评估，或项目评估自己做。<br>（13）没有进行系统的可行性分析，没有进行多方案比较。<br>（14）调研不充分，没有调研大规模应用的案例。<br>（15）没有调研国家政策是否允许。<br>（16）未进行项目论证</p>
+<p>2、<strong>项目建议与立项申请、初步可行性研究、详细可行性研究、评估与决策</strong>是项目投资前时期的四个阶段。<br>3、立项申请又称为项目建议书，是项目建设单位向上级主管部门提交项目中请时所必须的文件，提出的某一具体项目的建议文件，是对拟建项目提出的框架性总体设想。项目建议书是项目发展周期的初始阶段，是国家或上级主管部门选择项目的依据，也是可行性研究的依据。 涉及利用外资的项目，在项目建议书获得批准后，方可开展后续工作。<br>4、项目建议书应该包括的核心内容有:①项目的必要性；②项目的市场预测；③项目预期成果（如产品方案或服务）的市场预测;④项目建设必需的条件<br>5、信息系统项目进行可行性研究包括:<strong>技术可行性分析、经济可行性分析、社会效益可行性分析、运行环境可行性分析</strong>以及其他方面的可行性分析等。</p>
+<h3 id="整合管理"><a href="#整合管理" class="headerlink" title="整合管理"></a>整合管理</h3><p>1、整合管理常见问题</p>
+<table>
+<thead>
+<tr>
+<th>过程</th>
+<th>常见问题</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>制定项目章程</td>
+<td>1、没有写项目章程，没有颁布。  <br>2、项目经理自己颁布项目章程。  <br>3、项目经理修改项目章程。  <br>4、项目章程授权不够，项目经理没有权限，下面的人不听话。  <br>5、项目章程的内容不完整（关键字:包含，内容有）。</td>
+</tr>
+<tr>
+<td>制订项目管理计划</td>
+<td>1、项目管理计划没写，直接做事  <br>2、项目管理计划项目经理一个人写  <br>3、项目管理的计划内容不完整（关键字:包含，内容有）。  <br>4、只有初步的项目管理计划  <br>5、项目管理计划没有评审  <br>6、项目经理叫组长写完各分计划后，只是汇总项目管理计划，没有进行整合，协调  <br>7、项目已经变更，计划未更新  <br>8、没做好各子计划的统一协调，可能导致项目计划不符合项目实际情况  <br>9、项目管理计划制定比较简单，不足以支持整个项目对所需过程的指导和管理；  <br>10、项目计划缺少相关分计划，如质量计划、沟通计划等  <br>11、选择的软件开发生命周期模型不适合项目。</td>
+</tr>
+<tr>
+<td>执行与指导项目管理工作</td>
+<td>1、执行过于随意，没按计划进行  <br>2、公司缺乏对项目的指导和监控。  <br>3、项目经理没人支持，感觉迷茫缺少PMO。</td>
+</tr>
+<tr>
+<td>管理项目知识</td>
+<td>1、没有管理项目知识  <br>2、没有形成经验教训登记册  <br>3、没有合理运用相关的工具和技术</td>
+</tr>
+<tr>
+<td>项目监控和整体变更控制</td>
+<td>1、没进行项目监控。  <br>2、没走变更控制程序。  <br>3、变更控制程序缺少部分的步骤。  <br>4、缺少CCB。  <br>5、项目成员不走变更流程，直接修改项目工作内容。  <br>6、变更发生之后，不做处理。（项目经理没尽责）  <br>7、监控不力，（只至才发现&#x2F;。。。。时）</td>
+</tr>
+</tbody></table>
+<p>2、项目章程记录了关于项目和项目预期交付的产品、服务或成果的高层级信息:①项目目的;②可测量的项目目标和相关的成功标准；③高层级需求、高层级项目描述、边界定义以及主要可交付成果;④整体项目风险;⑤总体里程碑进度计划;⑥预先批准的财务资源;⑦关键干系人名单;⑧项目审批要求（例如，评价项目成功的标准，由谁对项目成功下结论，由谁签署项目结束）:⑨项目退出标准（例如，在何种条件下才能关闭或取消项目或阶段）;⑩委派的项目经理及其职责和职权;⑪发起人或其他批准项目章程的人员的姓名和职权等。【口诀:目的目标需求要描述;风险进度财务干系人要审批;退出两个职权】</p>
+<p>3、项目管理计划组件主要包括：<br>♦  子管理计划:范围管理计划、需求管理计划、进度管理计划、成本管理计划、质量管理计划、资源管理计划、沟通管理计划、风险管理计划、采购管理计划、干系人参与计划。<br>♦  基准:范围基准、进度基准和成本基准。<br>♦  其他组件:变更管理计划、配置管理计划、绩效测量基准、项目生命周期、开发方法、管理审查。<br>4、配置管理活动包括:识别配置项、记录并报告配置项状态、进行配置项核实与审计<br>5、结束项目或阶段过程所需执行的活动包括：<br>♦  为达到阶段或项目的完工或退出标准所必须的行动和活动；<br>♦  为关闭项目合同协议或项目阶段合同协议所必须开展的活动；<br>♦  为完成收集项目或阶段记录、审计项目成败、管理知识分享和传递、总结经验教训、存档项目信息以供组织未来使用等工作所必须开展的活动；<br>♦  为向下一个阶段，或者向生产和（或）运营部门移交项目的产品、服务或成果所必须开展的行动和活动；<br>♦  收集关于改进或更新组织政策和程序的建议，并将它们发送给相应的组织部门；<br>♦  测量干系人的满意程度等。</p>
+<h3 id="范围管理"><a href="#范围管理" class="headerlink" title="范围管理"></a>范围管理</h3><p>1、范围管理常见问题</p>
+<table>
+<thead>
+<tr>
+<th>过程</th>
+<th>常见问题</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>规划范围管理</td>
+<td>1、没做规划范围管理  <br>2、范围管理计划、需求管理计划是1个人编写的  <br>3、没有进行范围管理计划的评审  <br>4、缺乏项目范围管理的思想</td>
+</tr>
+<tr>
+<td>收集需求</td>
+<td>1、没做需求收集工作  <br>2、没召开需求评审会，没确认需求  <br>3、没有与各干系人对需求进行详细分析，只是在对客户需求的初步了解后就开始实施。  <br>4、对需求估计不准确，资源估算不足  <br>5、需求评审没有客户参与，可能导致最终对需求不能达成一致，设计文件没有经过正式评审，可能导致设计文件有较多的错误  <br>6、对客户（或用户）的需求获取不充分</td>
+</tr>
+<tr>
+<td>定义范围</td>
+<td>1、没进行范围定义  <br>2、范围说明书内容不全  <br>3、不能只参照类似项目的范围说明书，需要根据本项目情况进行编写  <br>4、范围说明书没经过评审  <br>5、一个人编写了范围说明书不对  <br>6、闭门造车式地开展需求调研与项目范围说明书的编写工作，没让相关干系人参与进来</td>
+</tr>
+<tr>
+<td>创建WBS</td>
+<td>1、没进行创建WBS  <br>2、不能单独一人对项目进行分解，而要让项目组成员也参与进来  <br>3、WBS没有经过相关干系人的确认  <br>4、没有编制WBS和WBS词典，以形成权威的范围基准。  <br>5、一个工作只能由1个人负责  <br>6、工作包的大小应该介于8&#x2F;80之间  <br>7、没包含外包出去的模块  <br>8、没包含项目管理工作  <br>9、一个下层属于多个上层了，有交叉从属人力资源管理，选用没用管理经验但专业能力强的人做项目经理，没进行培训。</td>
+</tr>
+<tr>
+<td>确认范围</td>
+<td>1、没做范围确认  <br>2、范围管理没做好，导致范围出现蔓延  <br>3、范围确认存在问题，导致WBS中定义的功能没有开发  <br>4、WBS最好可以分解到4-6层</td>
+</tr>
+<tr>
+<td>控制范围</td>
+<td>1、没做好范围控制  <br>2、存在镀金、范围蔓延行为</td>
+</tr>
+</tbody></table>
+<p>2、需求方面的问题：<br>（1）对客户（或用户）的需求获取不充分<br>（2）没有按照规范的需求开发与需求管理的流程及内容开展需求工作<br>（3）缺乏需求定义环节，没有定义出需求规格说明书<br>（4）缺乏需求验证环节，没有请客户代表一起进行需求评审<br>（5）没有制定范围和需求管理计划<br>（6）没有求得干系人对需求的一致理解<br>（7）没有求得干系人对需求的承诺<br>（8）没有有效地管理需求变更控制<br>（9）没有有效维护对需求进行跟踪管理<br>（10）没有及时识别项目工作与需求之间的不一致性<br>需求改进措施：<br>（1）建立需求变更控制策略和需求变更控制流程。<br>（2）采用多种方式充分获取用户需求并进行详细的需求分析<br>（3）形成需求规格说明书并与用户进行需求验证（确认）和评审<br>（4）需求定稿建立基线，以后的需求变更必须走变更控制流程，并及时更新需求规格说明书和需求跟踪矩阵<br>（5）编写需求跟踪矩阵，需求状态表等文档<br>（6）在需求规格说明书基础上编制技术方案，并进行评审<br>（7）定期不定期对项目绩效进行监督检查，找出问题原因并指导团队成员解决<br>3、<strong>范围管理计划</strong>用于指导如下过程和相关工作:①制定项目范围说明书;②根据详细项目范围说明书创建WBS;③确定如何审批和维护范围基准;④正式验收已完成的项目可交付成果。<br>4、需求的类别一般包括：业务需求、干系人需求、解决方案需求、过渡和就绪需求、项目需求、质量需求</p>
+<p>5、跟踪需求的内容包括:①业务需要、机会、目的和目标;②项目目标;③项目范围和WBS可交付成果；④产品设计;⑤产品开发；⑥测试策略和测试场景;⑦高层级需求到详细需求等。<br>6、需求踪矩阵中记录的典型属性包括唯一标识、需求的文字描述、收录该需求的理由、所有者、来源、优先级别、版本、当前状态和状态日期。为确保干系人满意，可能需要增加一些补充属性，如稳定性、复杂性和验收标准。<br>7、详细项目范围说明书内容：产品范围描述、可交付成果、验收标准、项目的除外责任<br>8、创建WBS的方法多种多样，常用的方法包括自上而下的方法、使用组织特定的指南和使用WBS模板。<br>9、要把整个项目工作分解为工作包，通常需要开展如下活动:①识别和分析可交付成果及相关工作;②确定WBS的结构和编排方法;③自上而下逐层细化分解;④为WBS组成部分制定和分配标识编码;⑤核实可交付成果分解的程度是否恰当<br>10、WBS的结构可以采用多种形式：<br>（1）以项目生命周期的各阶段作为分解的第二层，把产品和项目可交付成果放在第三层。<br>（2）以主要可交付成果作为分解的第二层。<br>（3）纳入由项目团队以外的组织开发的各种较低层次组件（如外包工作）。随后，作为外包工作的一部分，卖方须制定相应的合同WBS。<br>11、在分解的过程中，应该注意以下8个方面：（分解原则）<br>（1） WBS必须是面向可交付成果的:项目的目标是提供产品或服务，WBS中的各项工作是为提供可交付的成果服务的。（多次重复循环，软件测试）<br>（2） WBS必须符合项目的范围：WBS必须包括也仅包括为了完成项目的可交付成果的活动。 100%原则（包含原则）认为，在WBS中，所有下一级的元素之和必须100%代表上一级的元素。<br>（3） WBS的底层应该支持计划和控制:WBS是项目管理计划和项目范围之间的桥梁，WBS的底层不但要支持项目管理计划，而且要让管理层能够监视和控制项目的进度和预算。<br>（4） WBS中的元素必须有人负责，而且只有一个人负责<br>（5） WBS应控制在4〜6层:如果项目规模比较大，以至于WBS要超过6层，此时，可以使用项目分解结构将大项目分解成子项目，然后针对子项目来做WBSo每个级别的WBS将上一级的一个元素分为4〜7个新元素，同一级元素的大小应该相似。一个工作单元只能从属于某个上层单元，避免交叉从属。<br>（6） WBS应包括项目管理工作（因为管理是项目具体工作的一部分），也要包括分包出去的工作。<br>（7） WBS的编制需要所有（主要）项目干系人的参与<br>（8） WBS并非是一成不变的:完成了 WBS之后的工作中，仍然有可能需要对WBS进行修改。<br>12、范围基准：是经过批准的范围说明书、WBS和相应的WBS词典，只有通过正式的变更控制程。<br>13、<strong>确认范围</strong>过程与<strong>控制质量</strong>过程的不同之处在于，前者关注可交付成果的验收，而后者关注可交付成果的正确性及是否满足质量要求。控制质量过程通常赶确认范围过程，但二者也可同时进行。</p>
+<p>14、干系人关注点的不同</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>干系人</td>
+<td>关注重点</td>
+</tr>
+<tr>
+<td>管理层</td>
+<td>关注项且范围:是指范围对项目的进度、资金和资源的影响，这些因素是否超过了组织承受范围，是否在投入产出上具有合理性</td>
+</tr>
+<tr>
+<td>客户</td>
+<td>关注产品范围:关心项目的可交付成果是否足够完成产品或服务；在项目中，客户往往有在当前版本中加入所有功能和特征的意愿，这对于项目来说是一种潜在的风险，会给组织和客户带来危害和损失</td>
+</tr>
+<tr>
+<td>项目管理人员</td>
+<td>主要关注项目制约因素:关心项目可交付成果是否足够和必须完成，时间、资金和资源是否足够，主要的潜在风险和预备解决的方法</td>
+</tr>
+<tr>
+<td>项目团队成员</td>
+<td>主要关注项目范围中自己参与的元素和负责的元素:通过定义范围中的时间检查自己的工作时间是否足够，自己在项目范围中是否有多项工作</td>
+</tr>
+</tbody></table>
+<h3 id="进度管理"><a href="#进度管理" class="headerlink" title="进度管理"></a>进度管理</h3><p>1、进度管理常见问题</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>过程</td>
+<td>常见问题</td>
+</tr>
+<tr>
+<td>规划进度管理</td>
+<td>1、没进行规划进度管理  <br>2、不能一人来制定进度计划，并且没有从项目实际出发来制定进度计划，而根据合   <br>同规定的时间来制定的进度计划可能不符合项目实际情况</td>
+</tr>
+<tr>
+<td>活动定义</td>
+<td>1、没进行活动定义</td>
+</tr>
+<tr>
+<td>排列活动顺序</td>
+<td>1、没进行活动排序</td>
+</tr>
+<tr>
+<td>估算活动持续时间</td>
+<td>1、没进行历时估算  <br>2、历史估算不准确</td>
+</tr>
+<tr>
+<td>制定进度计划</td>
+<td>1、没制定进度计划  <br>2、加班会增加成本，影响质量  <br>3、并行工作会增加风险  <br>4、增加资源有时可能压缩工期有限  <br>5、制定进度计划的方法不合理，没有预留一定的缓冲时间。  <br>6、项目进度计划不合理  <br>7、计划未经过评审就付诸实施  <br>8、制定工作计划时，没考虑资源日历，导致有冲突  <br>9、在压缩工期的情况下，没有考虑新增加开发人员的可用性  <br>10、未经过评估情况下随意将原来系统开发时间压缩  <br>11、关键里程碑点没有获得相关干系人的签字确认</td>
+</tr>
+<tr>
+<td>控制进度</td>
+<td>1、没做进度控制  <br>2、控制进度的工作做得不好  <br>3、缺乏进度管理的思想</td>
+</tr>
+</tbody></table>
+<p>2、缩短活动工期方法<br>（1）赶工，投入更多的资源或增加工作时间，以缩短关键活动的工期。<br>（2）快速跟进，并行施工，以缩短关键路径的长度<br>（3）使用高素质的资源或经验更丰富的人员<br>（4）减小活动范围或降低活动要求<br>（5）改进方法或技术，以提高生产效率<br>（6）加强质量管理，及时发现问题，减少返工，从而缩短工期<br>【口诀】赶快使减改为加</p>
+<p>如果是成本超支，则答下面7-10条（补充）<br>（7）关注成本超支较严重的工作。<br>（8）对成本的支出进行细化分析，找出成本超支的原因。<br>（9）针对不同的成本超支原因，采取对应的措施。例如:减少不必要的工作、优化工作流<br>程提高效率、削减不必要的资源。<br>（10）定期对项目的成本绩效进行评估，及时按情况进行调整。</p>
+<p>3、确定和整合依赖关系</p>
+<table>
+<thead>
+<tr>
+<th>依赖关系类型</th>
+<th>解释说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>强制性依赖关系<br><br>（硬逻辑或硬依赖）</td>
+<td>法律或合同要求的或工作的内在性质决定的依赖关系；  <br>例如，在建筑项目中，只有在地基建成后，才能建立地面结构；在电子项目中，必须先把原型制造出来，然后才能对其进行测试（项目团队不能违反）</td>
+</tr>
+<tr>
+<td>选择性依赖关系   <br>（软逻辑）</td>
+<td>基于最佳实践建立的、或基于项目的某些特殊性质而采用的依赖关系（项目团队可自由选择）  <br>如果打算快速跟进，应当审查相应的选择性依赖关系。</td>
+</tr>
+<tr>
+<td>外部依赖关系</td>
+<td>项目活动与非项目活动之间的依赖关系，往往不在项目团队的控制范围内。   <br>例如，软件项目的测试活动取决于外部硬件的到货；建筑项目的现场准备，可能要在政府的环境听证会之后才能开始。（项目团队不可控）</td>
+</tr>
+<tr>
+<td>内部依赖关系</td>
+<td>是项目活动之间的紧前关系，在项目团队的控制之中。例如，只有机器组装完毕，团队才能对其测试。（项目团队可控）</td>
+</tr>
+</tbody></table>
+<p>4、进度压缩技术包括:<br>♦ 赶工:是通过增加资源，以最小的成本代价来压缩进度工期的一种技术。</p>
+<p>赶工的例子包括: 批准加班、增加额外资源或支付加急费用来加快关键路径上的活动。赶工只适用于那些通过增加资源就能缩短持续时间的且位于关键路径上的活动。但赶工并非总是切实可行的，因它可能导致风险和&#x2F;或成本的增加。</p>
+<p>♦ 快速跟进:将正常情况下按顺序进行的活动或阶段改为至少是部分并行开展。</p>
+<p>例如，在大楼的建筑图纸尚未全部完成前就开始建地基。快速跟进可能造成返工和风险增加，所以它只适用于能够通过并行活动来缩短关键路径上的项目工期的情况。若进度加快而使用提前量，通常会增加相关活动之间的协调工作,并增加质量风险。还有可能增加项目成本 <br>5、资源优化<br>♦ 资源平衡：是为了在资源需求与资源供给之间取得平衡，根据资源制约因素对开始日期和完成日期进行调整的一种技术。如果共享资源或关键资源只在特定时间可用而且数量有限,如一个资源在同一时段内被分配至两个或多个活动，就需要进行资源平衡。也可以为保持资源使用量处于均衡水平而进行资源平衡。资源平衡往往导致关键路径改变。可以用浮动时间平衡资源。<br>♦ 资源平滑：对进度模型中的活动进行调整，从而使项目资源需求不超过预定的资源限制的一种技术。相对于资源平衡而言，资源平滑不会改变项目的关键路径,完工日期也不会延迟。也就是说，<strong>活动只在其自由和总浮动时间内延迟</strong>，但资源平滑技术可能无法实现所有资源的优化。</p>
+<p>6、进度问题解决方法<br>进度落后，成本超支可以采取的措施：<br>（1）用高效人员代替低效人员；<br>（2）加班或赶工在预防风险的情况下并行施工；<br>（3）提高资源利用率；<br>（4）加强、改进沟通，提高效率；<br>（5）尽可能一次性把事情做对，减少返工。<br>（6）加强沟通<br>（6）增强优质资源<br>（7）外包和缩小项目范围<br>进度落后，成本节约可以采取的措施：<br>（1）赶工（例如全体加班方式）加快进度<br>（2）使用高效资源来替换低效资源加快进度<br>（3）改进方法，提高工作效率<br>进度超前，成本超支可以采取的措施：<br>（1）整个项目需要抽出部分人员以放慢工作进度；<br>（2）整个项目存在成本超支现象，需要采取控制成本措施；<br>（3）项目中区分不同的任务，采取不同的成本及进度措施；<br>（4）必要时调整成本基准。<br>（5）优化施工方案、提高效率、加强质量管理减少返工、加强沟通，以降低成本；<br>（6）在确保进度按期完成的基础上，可以降低进度以节约成本；<br>（7）总结项目进度“提前”的经验，并记录下来，把这经验传播到项目的其他班组，甚至其他 <br>项目或未来的项目；<br>进度超前，成本节约可以采取的措施：<br>（1）抽调部分人员用于其他项目<br>（2）加强质量控制，密切监控项目<br>（3）必要时调整计划或基准等方法改进，或者改变相关计划</p>
+<p>7、掌握三点估算和完工概率的计算:<br>均值e(t)&#x3D;（乐观值+4X最可能值+悲观值）&#x2F;6                   标准差&#x3D;（悲观值-乐观值）&#x2F;6</p>
+<p><img src="https://private-user-images.githubusercontent.com/3664948/415901151-d0ae011e-971d-4a77-ad6e-6f0ae8276f96.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAyMjQ4OTgsIm5iZiI6MTc0MDIyNDU5OCwicGF0aCI6Ii8zNjY0OTQ4LzQxNTkwMTE1MS1kMGFlMDExZS05NzFkLTRhNzctYWQ2ZS02ZjBhZTgyNzZmOTYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDIyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTAyMjJUMTE0MzE4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YTliNzY0ODc4MTE1YmM1N2U1ODdjNmI4Yjg1OTk4YTFiNzI0ZGJhYjYxZGNmODA1OWI5MTVlNzRiMjM2OWJlYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.18Zk8HeUTYWnIEZtGly2ZnSvuRyNhVDcrPHS67euEPE" class="lazyload" data-srcset="https://private-user-images.githubusercontent.com/3664948/415901151-d0ae011e-971d-4a77-ad6e-6f0ae8276f96.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAyMjQ4OTgsIm5iZiI6MTc0MDIyNDU5OCwicGF0aCI6Ii8zNjY0OTQ4LzQxNTkwMTE1MS1kMGFlMDExZS05NzFkLTRhNzctYWQ2ZS02ZjBhZTgyNzZmOTYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDIyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTAyMjJUMTE0MzE4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YTliNzY0ODc4MTE1YmM1N2U1ODdjNmI4Yjg1OTk4YTFiNzI0ZGJhYjYxZGNmODA1OWI5MTVlNzRiMjM2OWJlYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.18Zk8HeUTYWnIEZtGly2ZnSvuRyNhVDcrPHS67euEPE" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="三点估算"></p>
+<p>图的含义为：<br>工程在估算工期前后1期间内完工的概率为68%, <br>在估算工期前后2期间内完工的概率为95%, <br>估算工期前后3期间内完工的概率为99%</p>
+<h3 id="成本管理"><a href="#成本管理" class="headerlink" title="成本管理"></a>成本管理</h3><p>1、成本管理常见的问题:</p>
+<table>
+<thead>
+<tr>
+<th>过程</th>
+<th>常见问题</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>规划成本管理</td>
+<td>1、没进行成本规划  <br>2、1个人编写了成本管理计划  <br>3、成本管理计划没经过评审  <br>4、成本管理计划内容不全</td>
+</tr>
+<tr>
+<td>估算成本</td>
+<td>1、没进行成本估算  <br>2、成本估算不准确</td>
+</tr>
+<tr>
+<td>制定预算</td>
+<td>1、没进行成本预算  <br>2、成本预算不准确</td>
+</tr>
+<tr>
+<td>控制成本</td>
+<td>1、没进行成本控制  <br>2、没采用相关工具进行成本控制  <br>3、赶工导致成本超支了</td>
+</tr>
+</tbody></table>
+<p> 2、成本的类型：<br>（1）可变成本:随着生产量、工作量或时间而变的成本为可变成本。又称变动成本。<br>（2）固定成本:不随生产量、工作量或时间的变化而变化的非重复成本为固定成本。<br>（3）直接成本:直接可以归属于项目工作的成本为直接成本。如项目团队差旅费、工资、项目使用的物料及设备使用费（一个项目承担）<br>（4）间接成本:来自一般管理费用科目或几个项目共同担负的项目成本所分摊给本项目的费用，就形成了项目的间接成本，如税金、额外福利和保卫费用（几个项目分摊）<br>（5）机会成本:是利用一定的时间或资源生产一种商品时，而失去的利用这些资源生产其他最佳替代品的机会就是机会成本，泛指一切在做出选择后其中一个最大的损失。<br>（6）沉没成本:是指由于过去的决策已经发生了的，而不能由现在或将来的任何决策改变的成本。沉没成本是一种历史成本，对现有决策而言是不可控成本，会很大程度上影响人们的行为方式与决策，在投资决策时应排除沉没成本的干扰。</p>
+<p>3、成本管理主要是计算题，注意和进度的结合。<br>EV、PV、AC、BAC、CV、SV、EAC、ETC、CPI、SPI<br>公式：CV&#x3D;EV-AC,     &gt;0节省;  &lt;0超支; SV&#x3D;EV-PV,     &gt;0提前;  &lt;0滞后<br>CPI&#x3D;EV&#x2F;AC, &gt;1,节省；&lt;1,超支 SPI&#x3D;EV&#x2F;PV, &gt;1,提前；&lt;1,落后<br>ETC&#x3D; （BAC-EV）当前偏差被看做是非典型的<br>ETC&#x3D; （BAC-EV） &#x2F;CPI当前偏差被看做是代表未来的典型偏差<br>EAC&#x3D;AC+ETC—-衍化为下面两个公式<br>EAC&#x3D;AC+BAC-EV当前偏差被看做是非典型的<br>EAC&#x3D;AC+ （BAC-EV） &#x2F;CPI当前偏差被看做是代表未来的典型偏差</p>
+<p>4、下图中标示：①SV （进度偏差）;②CV （成本偏差）;③BAC （完工预算）;④VAC （完工偏差） <br>⑤项目整体拖延日期;⑥项目当前拖延日期</p>
+<p><img src="/1_%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E7%90%86%E8%AE%BA%E9%A2%98_image.png" class="lazyload" data-srcset="/1_%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E7%90%86%E8%AE%BA%E9%A2%98_image.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h3 id="质量管理"><a href="#质量管理" class="headerlink" title="质量管理"></a>质量管理</h3><p>1、项目质量管理可能问题:</p>
+<table>
+<thead>
+<tr>
+<th>过程</th>
+<th>常见问题</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>规划质量管理</td>
+<td>1、没有制定可行的质量管理计划并积极实施  <br>2、没有全面的质量管理进展情况报告  <br>3、质量管理计划内容不全  <br>4、在规划质量管理的时候应该同步制订过程改进计划，质量测量指标、质量核对单，并同步更新项目文件  <br>5、对程序员在质量意识和质量管理的培训不足  <br>6、没有严格执行公司完善的质量管理体系；  <br>7、质量职责分配不合理  <br>8、缺少质量标准和质量规范  <br>9、质量管理计划不应由小张一个人制定  <br>10、质量管理计划应经过评审  <br>11、质量管理计划的制定没有考虑项目实际情况  <br>12、质量管理的工具利用比较单一  <br>13、项目经理在项目质量管理方面的经验欠缺  <br>14、体系建设应全员参与，不应由质量部门单独负责体系文件编制  <br>15、体系应结合企业自身特点设计，不能照搬其它公司的文件或经验  <br>16、对团队成员质量意识和质量管理方面的培训不足</td>
+</tr>
+<tr>
+<td>管理质量</td>
+<td>1、没做质量保证  <br>2、质量保证过程中缺乏QA的参与  <br>3、项目经理用人错误，小李没有质量保证经验  <br>4、QA发现问题应与当事人协商，如果无法达成一致要向项目经理或更高级别的领导汇报，而不能自作主张  <br>5、在质量管理中，没有与合适的技术手段相结合  <br>6、项目经理认为质量管理中他是配合的角色，认识错误  <br>7、公司高层对质量管理认识不足，不重视质量管理  <br>8、没有指定专门的质量管理人员  <br>9、没有建立质量保证体系  <br>10、未审计质量要求和质量控制测量结果  <br>11、质量部门应全程参与项目的质量管理和体系运行，不能只检查结果  <br>12、没有按公司的质量管理体系要求来进行项目的质量管理，团队成员没有质量意识；  <br>13、没有安排专职的项目质量管理人员；  <br>14、没有建立质量保证体系，没有QA或QA不独立于项目组织或经验不足  <br>15、只是凭经验进行检查工作，而没有按质量的标准进行检查  <br>16、在质量检查中发现问题后没有及时解决，没有达到质量检查的效果</td>
+</tr>
+<tr>
+<td>控制质量</td>
+<td>1、没做质量控制  <br>2、质量控制环节缺失，例如评审和测试  <br>3、测试方法不当或不充分  <br>4、测试控制的流程不对，或未进行质量控制就进行了范围确认  <br>5、应加强项目过程中的质量控制或检查，不能等到工作产品完成后才检查  <br>6、质量控制做得不到位。  <br>7、存在走过场问题，没有深入地评审  <br>8、测试工作中在测试用例、测试方法、测试人员及测试环境等方面存在问题  <br>9、测试过程的阶段安排不合理，软件系统的测试时间不足  <br>10、代码被修改后没有及时进行回归测试并请干系人确认  <br>11、质量控制做的不到位，检查工作颗粒度不一  <br>12、缺少对项目质量管理工作和监督指导  <br>13、测试人员应该纳入项目团队管理，不应该请办公室职员代劳。</td>
+</tr>
+</tbody></table>
+<p> 2、应该怎么解决或提高项目质量？<br>（1）严格执行公司的质量管理体系规范工作流程；<br>（2）制定质量管理计划；<br>（3）执行质量保证计划；<br>（4）调配相关资源（如：人、财、物等）加强后续质量保证工作；<br>（5）加强后期的质量控制和测试，应安排相对独立的测试人员；<br>（6）提前加强产品交付后的客户服务和维护工作；<br>（7）加强沟通；<br>（8）建议必要时修改质量基准争取以最小的代价获得用户认可。<br>（9）参与开发项目的软件过程描述。评审过程描述用于保证该过程与组织政策、内部软 <br>件标准、外界标准及项目计划的其他部分相符；<br>（10）按质量管理计划实施质量检查，检查是否按标准过程实施项目工作。及时完成项目 <br>过程中的质量检查，在每次进行检查之前应检查清单，并将质量管理相关情况予以记录；<br>（11）依据检查的情况和记录，识别与相应软件开发过程的偏差，分析问题原因，发现尚 <br>可能存在的问题，并与当事人协商，争取解决问题。问题解决后要进行验证，如果无法与当事 <br>人达成一致，应按问题上报流程报告项目经理（或更高级别的领导），直至问题解决：<br>（12）定期给项目干系人分发质量报告；<br>（13）协调变更控制和变更管理，并帮助收集和分析软件度量信息等；<br>（14）为项目组成员提供质量管理要求方面的培训或指导等。<br>（15）强有力的领导<br>（16）建立组织级项目管理体系<br>（17）建立组织级质量管理体系，包括制定可行的过程规范和质量目标、质量标准<br>（18）建立项目级激励制度<br>（19）理解质量成本<br>（20）提高项目文档质量<br>（21）发展和遵从成熟度模型。<br>（22）应安排独立于项目组的有经验的质量保证人员负责质量保证工作<br>（23）对软件开发的过程实施质量审计</p>
+<p>（24）注重对需求和设计等开发过程文件的技术评审工作<br>（25）应加强需求和设计方案的评审和质量控制工作<br>（26）应加强项目实施过程中的配置管理工作<br>（27）提出合理有效的质量整改措施（如建议的纠正措施、对项目计划可能的更新等）</p>
+<p>3、质量成本 </p>
+<p><img src="/2_%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E7%90%86%E8%AE%BA%E9%A2%98_image.png" class="lazyload" data-srcset="/2_%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E7%90%86%E8%AE%BA%E9%A2%98_image.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>4、质量管理计划内容一般包括:①项目采用的质量标准;②项目的质量目标；③质量角色与职责;④需要质量审查的项目可交付成果和过程;⑤为项目规划的质量控制和质量管理活动;⑥项目使用的质量工具;⑦与项目有关的主要程序，例如处理不符合要求的情况、纠正措施程序以及持续改进程序等。<br>5、管理质量过程执行在项目质量管理计划中所定义的一系列有计划、有系统的行动和过程，有助于:①通过执行有关产品特定方面的设计准则，设计出最优的成熟产品;②建立信心，相信通过质量保证工具和技术（如质量审计和故障分析）可以使未来输出在完工时满足特定的需求和期望;③确保使用质量过程并确保其使用能够满足项目的质量目标;④提高过程和活动的效率与效果，获得更好的成果和绩效并提高干系人的满意度。<br>6、质量审计目标一般包括:①识别全部正在实施的良好及最佳实践;②识别所有违规做法、差距及不足;③分享所在组织和&#x2F;或行业中类似项目的良好实践;④积极、主动地提供协助，以改进过程的执行，从而帮助团队提高生产效率;⑤强调每次审计都应对组织经验教训知识库的积累做出贡献等。<br>7、测试类型：<br>&gt;  软件测试可能包括单元测试、集成测试、黑盒测试、白盒测试、接口测试、回归测试、α测试等；<br>&gt;  硬件开发中，测试可能包括环境应力筛选、老化测试、系统测试等。<br>&gt;  建筑项目中测试可能包括水泥强度测试、混凝土和易性测试，在建筑工地进行的旨在测试硬化混凝土结构的质量无损伤测试，以及土壤试验；<br>8、规划质量管理过程关注工作需要达到的质量，管理质量则关注管理整个项目期间的质量。控制质量关注工作成果与质量要求的比较，确保结果可接受。<br>9、质量与等级的区别。质量与等级是两个不同的概念。质量作例如：<br>（1）一个低等级（功能有限）、高质量（无明显缺陷，用户手册易读）的软件产品，该产品适合一般使用，可以被认可。<br>（2） 一个高等级（功能繁多）、低质量（有许多缺陷，用户手册杂乱无章）的软件产品，该产品的功能会因质量低劣而无效和&#x2F;或低效，不会被使用者接受。</p>
+<h3 id="资源管理"><a href="#资源管理" class="headerlink" title="资源管理"></a>资源管理</h3><p>1、资源可能问题:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>过程</td>
+<td>常见问题</td>
+</tr>
+<tr>
+<td>规划资源管理</td>
+<td>1、没有规划资源管理  <br>2、资源管理计划项目经理一人制定，没有全员参与  <br>3、资源管理计划内容不全面，有遗漏  <br>4、质量工程师编写资源管理计划是不对的  <br>5、资源管理计划应该各干系人参与，而且还需要经过评审</td>
+</tr>
+<tr>
+<td>估算活动资源</td>
+<td>1、没有做估算活动资源  <br>2、资源估算过于简单，没有准确估算出项目中的团队资源和实物资源  <br>3、资源估算内容不全  <br>4、由项目经理一人进行资源估算，没有全员参与  <br>5、没有采用合适的工具和技术</td>
+</tr>
+<tr>
+<td>获取资源</td>
+<td>1、招聘人员时的考核指标不应该仅仅是设备维修经验，还应该注重能力的考查  <br>2、团队成员应该有冗余，防止因事假、病假造成其它成员的超负荷工作  <br>3、人员任命方面存在问题，任命的项目经理虽然研发能力强，但项目管理经验不足  <br>4、成员水平参差不齐，项目团队组建的人员是从各个组别中找出空闲的人员，需要   <br>根据实际情况组建团队  <br>5、用人不当，不应选新毕业生做质量保证  <br>6、缺乏团队领导经验，事必躬亲的做法不对  <br>7、实物资源采购价格过高，没有多方询价对比  <br>8、实物资源获取方式不合理，没有全部获取到  <br>9、获得到的资源种类和数量不全</td>
+</tr>
+<tr>
+<td>建设团队</td>
+<td>1、没做团队建设  <br>2、团队的组成人员尽管富有才干，但是却很难合作  <br>3、项目团队的职责分配不清楚，没有建立RAM责任矩阵  <br>4、团队的气氛不积极，造成项目团队成员的士气低落  <br>5、人员流动过于频繁  <br>6、兼职过多，精力和时间不够用，顾此失彼  <br>7、没有进入管理角色，定位错误，疏于对项目的管理  <br>8、新人缺乏培训和全程的跟踪和监控  <br>9、项目团队成员能力不足  <br>10、项目经理应该给予必要的帮助和辅导，加快团队成员的成长  <br>11、绩效管理方面存在问题，没有及时对加班成员进行激励  <br>10、团队成员没有明确的考核和评价标准，考核规则不明确，需要明确标准  <br>11、建设团队可能不合理，考虑不充分，导致需要远程办公  <br>12、Y型的管理风格没有与切实可行的规章制度相结合  <br>13、钱某的管理风格没有与直接领导的管理风格相协调。</td>
+</tr>
+<tr>
+<td>管理团队</td>
+<td>1、没做团队管理  <br>2、没有进行良好的冲突管理  <br>3、项目经理要注重团队绩效和个人绩效的考核，要加强过程的监督和控制  <br>4、项目经理认为团队管理的核心是团队凝聚力强，不发生冲突是错误的，冲突是不可避免的，关键在于如何处理冲突  <br>5、没有协同工作，工位分散导致没有良好的沟通，需要加强协调工作  <br>6、缺乏合理且有激励性的考核方案；  <br>7、绩效奖金分配不合理  <br>8、没做好激励，导致员工士气低落和离职  <br>9、奖励政策没有得到领导的同意  <br>10、王某对于冲突的处理方式过于简单</td>
+</tr>
+<tr>
+<td>控制资源</td>
+<td>1、没做控制资源  <br>2、没有对资源使用情况进行监控或监控周期过长  <br>3、资源在不再需要时候没有做释放，导致成本超支  <br>4、资源分配不合理  <br>5、出现资源相关问题时没有通知相应干系人  <br>6、没有分析出影响可以导致资源使用变更的因素  <br>7、在变更实际发生时没有对其进行管理或没有走变更流程</td>
+</tr>
+</tbody></table>
+<p> 2、项目经理的权力有5种来源：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>权利类型</td>
+<td>解释说明</td>
+</tr>
+<tr>
+<td>职位权力</td>
+<td>来源于管理者在组织中的则立和职权，高级管理层对项目经理的正式授权</td>
+</tr>
+<tr>
+<td>惩罚权力</td>
+<td>使用<strong>降职、扣薪、惩罚、批评、威胁</strong>等负面手段的能力，应谨慎使用</td>
+</tr>
+<tr>
+<td>奖励权力</td>
+<td>给予下属奖励的能力；奖励包括加薪、升职、福利、休假、礼物、口头表扬、认可度、特殊的任务以及其他的奖励员工满意行为的手段</td>
+</tr>
+<tr>
+<td>专家权力</td>
+<td>来源于<strong>个人的专业技能</strong>，来自一线的中层管理者经常具有很大的专家权力</td>
+</tr>
+<tr>
+<td>参照权力</td>
+<td>由于<strong>成为别人学习参照榜样</strong>所拥有的力量</td>
+</tr>
+</tbody></table>
+<p>职位权力、惩罚权力、奖励权力来自于组织的授权，专家权力和参照权力来自于管理者自身。对于双重汇报关系和非直接汇报关系人员的管理，项目经理更注重运用奖励权力、专家权力和参照权力,尽量避免使用惩罚权力。</p>
+<p>3、优秀团队的建设5个阶段：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>阶段</td>
+<td>解释说明</td>
+</tr>
+<tr>
+<td>形成阶段</td>
+<td>一个个的个体转变为团队成员，逐渐相互<strong>认识并了解</strong>项目情况及他们在项目中   <br>的<strong>角色与职责</strong>，开始<strong>形成共同目标</strong></td>
+</tr>
+<tr>
+<td>震荡阶段</td>
+<td>团队成员开始执行分配的项目任务，一般会遇到超出预想的困难，希望被现实打破。<strong>个体之间开始争执，互相指责，并且开始怀疑项目经理的能力</strong></td>
+</tr>
+<tr>
+<td>规范阶段</td>
+<td>经过一定时间的磨合，团队成员开始<strong>协同工作</strong>，并调整各自的工作习惯和行为   <br>来支持团队，团队成员开始<strong>相互信任</strong>，项目经理能够得到团队的<strong>认可</strong></td>
+</tr>
+<tr>
+<td>发挥阶段</td>
+<td>随着相互之间的配合默契和对项目经理的信任加强，团队就像一个<strong>组织有序</strong>的单位那样工作。团队成员的<strong>集体荣誉感会非常强</strong></td>
+</tr>
+<tr>
+<td>解散阶段</td>
+<td>所有工作完成后，<strong>项目结束</strong>，团队解散</td>
+</tr>
+</tbody></table>
+<p>4、马斯洛的需要层次理论【底层的4种需求即生理、安全、社会交往、受尊重被认为是基本的需求，而自我实现是最高层次的需求】</p>
+<table>
+<thead>
+<tr>
+<th>层次</th>
+<th>需求层次</th>
+<th>定义</th>
+<th>常见的激励措施</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>生理需求</td>
+<td>对衣食住行等需求</td>
+<td>员工宿舍、工作餐、工作服、班车、<strong>工资</strong>、 补贴、<strong>奖金</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>安全需求</td>
+<td>对人身安全、生活稳定、不致失业以及免遭痛苦、威胁或疾病等的需求</td>
+<td>养老<strong>保险</strong>、医疗保障、长期劳动合同、意外保险、失业保险</td>
+</tr>
+<tr>
+<td>3</td>
+<td>社会交往需求</td>
+<td>对友谊、爱情以及隶属关系的需求</td>
+<td>定期员工<strong>活动</strong>、聚会、比赛、俱乐部</td>
+</tr>
+<tr>
+<td>4</td>
+<td>受尊重需求</td>
+<td>自尊心和荣誉感</td>
+<td><strong>荣誉</strong>性的奖励，形象、地位的提升，颁发奖章，作为导师培训别人</td>
+</tr>
+<tr>
+<td>5</td>
+<td>自我实现需求</td>
+<td>实现自己的潜力，发挥个人能力到最大程度，使自己越来越成为自己所期望的人物</td>
+<td>给他更多的空间让他负责、让他成为智囊团、<strong>参与决策</strong>,参与公司的管理会议</td>
+</tr>
+</tbody></table>
+<p>5、X理论：【不好】<br>（1）人天性好逸恶劳，只要有可能就会逃避工作。<br>（2）人生来就以自我为中心，漠视组织的要求。<br>（3）人缺乏进取心，逃避责任，甘愿听从指挥，安于现状，没有创造性。<br>（4）人们通常容易受骗，易受人煽动。<br>（5）人们天生反对改革。<br>（6）人的工作动机就是为了获得经济报酬。<br>Y理论：【好】<br>（1）人天生并不是好逸恶劳，他们热爱工作，从工作得到满足感和成就感。<br>（2）外来的控制和处罚对人们实现组织的目标不是一个有效的办法，下属能够自我确定目标，自我指挥和自我控制。<br>（3）在适当的条件下，人们愿意主动承担责任。<br>（4）大多数人具有一定的想象力和创造力。<br>（5）在现代社会中，人们的智慧和潜能只是部分地得到了发挥，如果给予机会，人们喜欢工作，并渴望发挥其才能。</p>
+<p>6、资源计划内容：识别资源、获取资源、角色与职责、项目组织图、项目团队资源管理、 培训、团队建设、资源控制、认可计划<br>7、团队章程包括:团队价值观、沟通指南、决策标准和过程、冲突处理过程、会议指南和团队共识<br>8、虚拟团队模式使人们有可能:①在组织内部地处不同地理位置的员工之间组建团队;②为项目团队增加特殊技能，即使相应的专家不在同一地理区域;③将在家办公的员工纳入团队;④在工作班次、工作小时或工作日不同的员工之间组建团队;⑤将行动不便者或残疾人纳入团队;⑥执行那些原本会因差旅费用过高而被搁置或取消的项目；⑦节省员工所需的办公室和所有实物设备的开支等。<br>9、建设项目团队的目标包括:①提高团队成员的知识和技能②提高团队成员之间的信任和认同感;③创建富有生气、凝聚力和协作性的团队文化;④提高团队参与决策的能力。</p>
+<p>10、可采用的沟通技术包括：<br>&gt;  共享门户:共享信息库（如网站、协作软件或内部网）对虚拟项目团队很有帮助。<br>&gt;  视频会议:一种可有效地与虚拟团队进行沟通的重要技术。<br>&gt;  音频会议:有助于与虚拟团队建立融洽的相互信任的关系。<br>&gt;  电子邮件&#x2F;聊天软件：使用电子邮件和聊天软件定期沟通也是一种有效的方式。<br>11、5种常用的冲突解决方法：①撤退&#x2F;回避；②缓和&#x2F;包容；③妥协&#x2F;调解；④强迫&#x2F;命令; ⑤合作&#x2F;解决问题；</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>方法类型</td>
+<td>解释说明</td>
+</tr>
+<tr>
+<td>撤退&#x2F;回避</td>
+<td>从实际或潜在冲突中退出，将问题推迟到准备充分的时候，或者将问题推给其他人员解决。</td>
+</tr>
+<tr>
+<td>缓和&#x2F;包容</td>
+<td>强调一致而非差异;为维持和谐与关系而退让一步，考虑其他方的需要。</td>
+</tr>
+<tr>
+<td>妥协&#x2F;调解</td>
+<td>为了暂时或部分解决冲突，寻找能让各方都在一定程度上满意的方案，但这种方法有时会导致“双输”局面</td>
+</tr>
+<tr>
+<td>强迫&#x2F;命令</td>
+<td>以牺牲其他方为代价，推行某一方的观点；只提供赢-输方案。通常是利用权力来强行解决紧急问题，这种方法通常会导致“赢-输”局面。</td>
+</tr>
+<tr>
+<td>合作&#x2F;解决问题</td>
+<td>综合考虑不同的观点和意见，采用合作的态度和开放式对话引导各方达成共识和承诺，这种方法可以带来双赢局面。</td>
+</tr>
+</tbody></table>
+<p>12、控制资源过程关注:①监督资源支出;②及时识别和处理资源缺乏&#x2F;剩余情况;③确保根据计划和项目需求使用并释放资源;④出现资源相关问题时通知相应干系人;⑤影响可以导致资源使用变更的因素;⑥在变更实际发生时对其进行管理等。<br>13、多标准决策分析可使用的选择标准包括:可用性、成本、能力、经验、知识、技能、态度、国际因素。</p>
+<h3 id="沟通管理"><a href="#沟通管理" class="headerlink" title="沟通管理"></a>沟通管理</h3><p>1、沟通管理常见问题：</p>
+<table>
+<thead>
+<tr>
+<th>过程</th>
+<th>常见问题</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>规划沟通管理</td>
+<td>1、没进行规划沟通管理  <br>2、沟通管理计划不能一人制订  <br>3、沟通管理计划内容不全  <br>4、沟通管理计划完成后没有邀请有关干系人确认、评审  <br>5、制定沟通管理计划没有结合项目实际情况，只参考了以往的文件制定。  <br>6、项目经理对沟通管理经验不足</td>
+</tr>
+<tr>
+<td>管理沟通</td>
+<td>1、没做管理沟通  <br>2、没有或极少与客户进行直接沟通，合作氛围不够  <br>3、没有对团队成员的沟通需求和沟通风格进行分析  <br>4、沟通方式单一  <br>5、项目执行过程中未能进行及时有效的沟通（或建立有效的沟通机制）<br><br>6、没有对沟通情况进行记录  <br>7、沟通管理存在问题，导致客户对项目很不满并投诉，并且没有将相关项目绩效数  <br>据发送给项目管理办公室  <br>8、干系人沟通方式单一，只采用电子邮件方式  <br>9、管理沟通不力，对于员工的诉求，应私下解决问题，不应在大会上公开说  <br>10、周报内容不全  <br>11、月度例会粒度太粗  <br>12、项目沟通会不应该由客户召集。  <br>13、会议应该要定时召开，案例中没有明确开会时间。  <br>14、每次开会，不应该临时安排参会人员，应提前通知安排。  <br>15、召开会议前，应提前准备会议议题，  <br>16、开会应当注重效率，不要延伸无关内容  <br>17、未能及时与客户沟通，引起客户不满。</td>
+</tr>
+<tr>
+<td>监督沟通</td>
+<td>1、没做监督沟通  <br>2、监督沟通工作做得不好，没有对存在的沟通问题及时进行解决  <br>3、与客户发生了争执，沟通管理有问题  <br>4、控制沟通不力，采取强迫手段中止员工的诉求，导致后续的冲突升级  <br>5、与高层沟通不力，未得到高层领导的认同。  <br>6、甲方没有对各部门的需求进行统一的组织和管理  <br>7、缺乏与客户清晰的、统一的接口，与客户沟通不是很有效  <br>8、公司其他职能部门支持或协作不够  <br>9、缺乏良好的沟通能力和沟通技巧  <br>10、对项目干系人的需求了解不细致。  <br>11、项目缺乏阶段沟通与阶段评审。  <br>12、沟通结果未能形成相关记录文件  <br>13、控制沟通过程没有邀请专家参与  <br>14、没有提出变更中请，没有组建CCB变更控制委员会对变更进行确认  <br>15、变更没有书面记录，只是电话通知了变更实施者  <br>16、变更过程中没有监控</td>
+</tr>
+</tbody></table>
+<p>2、沟通方法</p>
+<table>
+<thead>
+<tr>
+<th>沟通方法</th>
+<th>方法定义</th>
+<th>方法举例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>互动式沟通</td>
+<td>在两方或多方之间进行多向信息交换</td>
+<td>会议、电话、即时通信、社交媒体、视频会议</td>
+</tr>
+<tr>
+<td>推式沟通</td>
+<td>向需要接收信息的特定接收方发送或发布信   <br>息。这种方法可以确保信息的发送，但不能   <br>确保信息送达目标受众或被目标受众理解</td>
+<td>信件、备忘录、报告、电子邮件、传真、语音邮件、博客和新闻稿</td>
+</tr>
+<tr>
+<td>拉式沟通</td>
+<td>用于大量复杂信息或大量信息受众的情况。  <br>它要求接收方在遵守有关安全规定的前提之   <br>下自行访问相关内容</td>
+<td>门户网站、组织内网、电子在线课程、经验教训数据库或知识库</td>
+</tr>
+</tbody></table>
+<p>3、沟通管理计划内容主要包括:①干系人的沟通需求;②需沟通的信息，包括语言、形式、内容和详细程度;③上报步骤;④发布信息的原因;⑤发布所需信息、确认已收到或作出回应（若适用）的时限和频率;⑥负责沟通相关信息的人员;⑦负责授权保密信息发布的人员;⑧接收信息的人员或群体，包括他们的需要、需求和期望;⑨用于传递信息的方法或技术，如备忘录、电子邮件、新闻稿，或社交媒体;⑩为沟通活动分配的资源，包括时间和预算；⑪随着项目进展（如项目不同阶段干系人社区的变化）而更新与优化沟通管理计划的方法；⑫通用术语表；⑬项目信息流向图、工作流程（可能包含审批程序）、报告清单和会议计划等；⑭来自法律法规、技术、组织政策等的制约因素；⑮关于项目状态会议、项目团队会议、网络会议和电子邮件等的指南和模板；⑯项目网站和项目管理软件<br>4、沟通渠道的总量为n (n-1)&#x2F;2,其中，n代表干系人的数量</p>
+<h3 id="干系人管理"><a href="#干系人管理" class="headerlink" title="干系人管理"></a>干系人管理</h3><p>1、干系人管理常见问题：</p>
+<table>
+<thead>
+<tr>
+<th>过程</th>
+<th>常见问题</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>识别干系人</td>
+<td>1、没进行干系人识别  <br>2、干系人识别不全，遗漏了重要干系人  <br>3、独自编制干系人登记册&#x2F;清单不妥</td>
+</tr>
+<tr>
+<td>规划干系人管理</td>
+<td>1、没进行规划干系人管理  <br>2、干系人参与计划不全  <br>3、干系人参与计划不合理，没有考虑重要干系人</td>
+</tr>
+<tr>
+<td>管理干系人参与</td>
+<td>1、没做管理干系人参与</td>
+</tr>
+<tr>
+<td>监督干系人参与</td>
+<td>1、没做控制干系人参与</td>
+</tr>
+</tbody></table>
+<p>权力利益方格&#x2F;权力影响方格</p>
+<p>基于干系人的职权级别（权力）、对项目成果的关心程度（利益）、对项目成果的影响能力（影响），或改变项目计划或执行的能力</p>
+<p><img src="/3_%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E7%90%86%E8%AE%BA%E9%A2%98_image.png" class="lazyload" data-srcset="/3_%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E7%90%86%E8%AE%BA%E9%A2%98_image.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>★权力&#x2F;利益方格的方法<br><strong>B区（重点管理、及时汇报一项目的客户和项目经理的主管领导）；</strong><br>C区（随时告知）；<br>A区（令其满意）；<br>D区（化最少的精力来监督他们）；</p>
+<p>3、<strong>干系人登记册</strong>:记录已识别干系人的信息，主要包括：<br>♦ <strong>身份信息</strong>:姓名、组织职位、地点、联系方式，以及在项目中扮演的角色。<br>♦ <strong>评估信息</strong>:主要需求、期望、影响项目成果的潜力，以及干系人最能影响或冲击的项目生命周期阶段。<br>♦ <strong>干系人分类</strong>:用内部或外部，作用、影响、权力或利益，上级、下级、外围或横向，或者项目经理选择的其他分类模型进行分类的结果等。<br>4、干系人参与度评估矩阵：用于将干系人当前参与水平与期望参与水平进行比较<br>①不了解型:不知道项目及其潜在影响。<br>②抵制型:知道项目及其潜在影响，但抵制项目工作或成果可能引发的任何变更。此类干系人不会支持项目工作或项目成果。<br>③中立型:了解项目，但既不支持, 也不反对。<br>④支持型:了解项目及其潜在影响, 并且会支持项目工作及其成果。<br>⑤领导型:了解项目及其潜在影响,而且积极参与以确保项目取得成功。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>干系人</td>
+<td>不知晓</td>
+<td>抵制</td>
+<td>中立</td>
+<td>支持</td>
+<td>领导</td>
+</tr>
+<tr>
+<td>干系人1</td>
+<td>C</td>
+<td></td>
+<td></td>
+<td>D</td>
+<td></td>
+</tr>
+<tr>
+<td>干系人2</td>
+<td></td>
+<td></td>
+<td>C</td>
+<td>D</td>
+<td></td>
+</tr>
+<tr>
+<td>干系人3</td>
+<td></td>
+<td></td>
+<td></td>
+<td>DC</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>C代表每个干系人的当前参与水平，而D是项目团队评估出来的、为确保项目成功所必不可少的参与水平（期望的）。应根据每个干系人的当前与期望参与水平的差距，开展必要的沟通，有效引导干系人参与项目。弥合当前与期望参与水平的差距是监督干系人参与中的一项基本工作。</p>
+<h3 id="风险管理"><a href="#风险管理" class="headerlink" title="风险管理"></a>风险管理</h3><p>1、风险管理中存在常见问题</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>过程</td>
+<td>常见问题</td>
+</tr>
+<tr>
+<td>规划风险管理</td>
+<td>1、没进行规划风险管理  <br>2、风险管理计划编制存在问题，独自一人完成而没有邀请项目组其他成员参与  <br>3、仅仅参照以前的项目模板编制风险管理计划  <br>4、风险管理计划没有经过项目组讨论直接签字下发实施，缺乏沟通，也导致项目中的实际问题与计划的偏差较大。</td>
+</tr>
+<tr>
+<td>识别风险</td>
+<td>1、没做风险识别  <br>2、不能仅凭个人的经验进行风险识别，而要与项目组成员一起参与。  <br>3、风险识别不够详细，只识别出了主要风险，没有识别出所有风险。  <br>4、识别不全面，风险识别过程应该是反复的过程  <br>5、不仅凭个人的经验进行风险的识别  <br>6、员工缺乏风险意识  <br>7、对项目的风险认识不足</td>
+</tr>
+<tr>
+<td>实施定性风险分析</td>
+<td>1、没做定性风险分析  <br>2、定性风险风险方法不合理</td>
+</tr>
+<tr>
+<td>实施定量风险分析</td>
+<td>1、没做定量分析  <br>2、定性风险风险方法不合理</td>
+</tr>
+<tr>
+<td>规划风险应对</td>
+<td>1、没做风险应对  <br>2、依据自己经验制定应对计划不妥，应依据定性风险分析的风险值开展定量风险分析排序后，制定风险应对计划</td>
+</tr>
+<tr>
+<td>实施风险应对</td>
+<td>1、没做实施风险应对  <br>2、自己负责各项应对措施不妥，各风险应对措施的实施应责任分配到人  <br>3、风险应对措施制订不合理</td>
+</tr>
+<tr>
+<td>监督风险</td>
+<td>1、没做风险控制  <br>2、没有处理好外部因素（天气）和内部因素（团队）带来的风险，缺乏有效的应对措施。  <br>3、风险监控做的不好，导致风险没有及时发现。  <br>4、没有进行风险再识别  <br>5、没有进行风险审计  <br>6、风险控制和应对措施都是各成员按各自理解进行安排。应该在充分沟通的前提下统一进行风险应对和管控。</td>
+</tr>
+</tbody></table>
+<p>2、风险的可预测性：已知风险、可预测风险、不可预测风险</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>已知风险</td>
+<td>在认真、严格地分析项目及其计划之后就能够明确的那些经常发生的，而且其后果亦可预见的风险</td>
+<td>项目目标不明确，过分乐观的进度计划，设计或施工变更和材料价格波动</td>
+</tr>
+<tr>
+<td>可预测风险</td>
+<td>根据经验，可以预见其发生，但不可预见其后果的风险</td>
+<td>业主不能及时审查批准，分包商不能及时交工，施工机械出现故障，不可预见的地质条件</td>
+</tr>
+<tr>
+<td>不可预测风险</td>
+<td>有可能发生，但其发生的可能性即使最有经验的人亦不能预见的风险，未知风险或未识别的风险</td>
+<td>地震、百年不遇的暴雨、通货膨胀和政策变化</td>
+</tr>
+</tbody></table>
+<p>3、威胁应对策略</p>
+<p>上报、规避、转移、减轻、接受</p>
+<p>4、机会应对策略</p>
+<p>上报、开拓、分享、提高、接受</p>
+<p>5、整体项目风险应对策略</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>策略</td>
+<td>定义</td>
+<td>举例</td>
+<td>注意点</td>
+</tr>
+<tr>
+<td>规避</td>
+<td>采取集中行动，弱化不确定性对项目整体的负面影响，并将项目拉回到临界值以内。</td>
+<td>取消项目范围中的高风险工 作取消项目（最极端）</td>
+<td>适用于整体项目风险有严重负面影响的，并已超出商定的项目风险临界值。</td>
+</tr>
+<tr>
+<td>开拓</td>
+<td>采取集中行动，去获得不确定性对整体项目的正面影响。</td>
+<td>项目范围中增加高收益的工作 与关键干系人协商修改项目风险临界值</td>
+<td>适用于整体项目风险有显著正面影响的，   <br>并已超出商定的项目风险临界值。</td>
+</tr>
+<tr>
+<td>转移或分享</td>
+<td>让第三方代表组织对风险进行管理  <br>负面风险:转移策略，支付费用；   <br>正面风险:多方分享，获得利益；</td>
+<td>建立协作式业务结构、成立   <br>合资企业或特殊目的公司、分包关键工作</td>
+<td>适用于整体项目风险的级别很高，组织无法有效加以应对。</td>
+</tr>
+<tr>
+<td>减轻或提高</td>
+<td>变更整体项目风险的级别，以优化实现项目目标的可能性。</td>
+<td>重新规划项目、改变项目范   <br>围和边界、调整项目优先级、改变资源配置、调整交付时   <br>间</td>
+<td>减轻策略:适用于负面的整体风险  <br>提高策略:适用于正面的整体风险</td>
+</tr>
+<tr>
+<td>接受</td>
+<td>不主动采取措施，继续按当前的定义推动项目进展。</td>
+<td>主动接受健立整体应急储备；   <br>被动接受:记录策略，无需任何其他行动，需要定期复查</td>
+<td>适用于无法针对整体项目风险采取主动的应对策略。</td>
+</tr>
+</tbody></table>
+<p>6、风险管理计划内容：①风险管理策略；②方法论；③角色与职责；④资金；⑤时间安排； ⑥风险类别；⑦干系人风险偏好；⑧风险概率和影响；⑨概率和影响矩阵；⑩报告格式；⑪跟踪<br>7、SWOT分析：对项目的优势、劣势、机会和威胁（简称SWOT）进行逐个检查<br>8、风险识别阶段风险登记册：已识别风险的清单、潜在风险责任人、潜在风险应对措施清单<br>9、险识别阶段风险报告内容主要包括：（1）整体项目风险的来源；（2）关于已识别单个项目风险的概述信息。</p>
+<h3 id="采购和合同管理"><a href="#采购和合同管理" class="headerlink" title="采购和合同管理"></a>采购和合同管理</h3><p>1、采购管理中存在常见问题</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>过程</td>
+<td>常见问题</td>
+</tr>
+<tr>
+<td>规划采购管理</td>
+<td>1、没做规划采购  <br>2、未进行充分的自制或外购分析</td>
+</tr>
+<tr>
+<td>实施采购</td>
+<td>1、没做实施采购  <br>2、在项目采购过程中，项目经理片面相信甲方的推荐，没有真正发挥自身在合同管理中的职责，而在被检查出问题后，又没有能够积极主动地采取措施，而是推卸责任  <br>3、供应商的获取方式存在问题</td>
+</tr>
+<tr>
+<td>控制采购</td>
+<td>1、控制采购  <br>2、设备到货验收存在问题  <br>3、监督合同的执行过程存在问题  <br>4、控制采购过程中相关文档和往来凭证管理存在问题  <br>5、库房管理（环境等）存在问题</td>
+</tr>
+<tr>
+<td>招投标</td>
+<td>1、未审核投标代理机构的资质  <br>2、未审核投标方的资质  <br>3、招标过程中修改了招标文件，却只进行了电话沟通  <br>4、选择最低价的并不一定是最好的，可能缺乏完善的评分办法  <br>5、开标时间不符要求。开标应在招标文件确定的截止时间的同一时间公开进行  <br>6、评标专家委员会成员缺少经济、技术类专家，要求是5人以上单数，技术、经济类专家占2&#x2F;3  <br>7、投标文件的密封应有投标人或代表检查，不应由代理机构检查  <br>8、招标未公示  <br>9、中标候选人超过3个  <br>10、中标公示结果少于3天  <br>11、投标截止时间存在问题，依法必须进行招标的项目，自招标文件开始发出之日起至投标人提交投标文件截止之日止，最短不得少于二十日  <br>12、招标代理机构拒绝投标人投标文件修改存在问题，投标人在招标文件要求提交投标文件的截至时间前，可以补充、修改或者撤回已提交的投标文件，并书面通知招标人  <br>13、接受迟到的C公司投标文件存在问题，在招标文件要求提交投标文件的截止时间后送达的投标文件，招标人应当拒收  <br>14、没有对中标候选人进行排名  <br>15、A公司直接决定D公司中标存在问题，招标人应当确定排名第一的中标候选人为中标人  <br>16、A公司公布中标结果，并向D公司发出了中标通知书存在问题，中标人确定后，招标人应当向中标人发出中标通知书，并同时将中标结果通知所有未中标的投标人。   <br>17、B公司向招标代理机构询问中标结果，招标代理机构以保密为由拒绝告知，需要将中标结果通知所有未中标的投标人  <br>18、A公司与D公司签署了商务合同存在问题，招标人和中标人应当自中标通知书发出之日起三十日内，按照招标文件和中标人的投标文件订立书面合同  <br>19、D公司将项目的某重要工作分包给了另一家公司存在问题，只能将非关键、非主体工作进行分包  <br>20、D公司直接分包项目存在问题，中标人需按照合同约定或者经招标人同意。</td>
+</tr>
+</tbody></table>
+<p>2、合同管理常见问题：<br>（1）没有做好签订合同之前的调查工作，合同签订过于草率<br>（2）合同没有制定好，缺乏明确清晰的工作说明或更细化的合同条款<br>（3）没有采取措施，确保合同签约双方对合同条款的一致理解<br>（4）合同中缺乏相应的纠纷处理条款<br>（5）对于签订总价合同的风险认识不足<br>（6）合同中可能未对工期、质量和项目目标等关键问题进行约束<br>（7）合同中缺少必要的项目需求描述及违约责任约定<br>（8）合同执行过程中没有做好记录保存工作（或合同档案管理不规范）<br>（9）缺少事先约定的合同变更流程。<br>（10）合同中对项目的维护和保养责任约定不明确，应当明确约定项目的维护责任、期限及相关费用的支付方式<br>（11）合同中对合同履行地没有详细的约定，应当明确约定合同履行地<br>（12）合同条款不严谨，没有就产品的型号、质量等进行严格的约定，合同中的付款条件没有产品质量验收的约束，缺少对合同交付物必要的质量检验和付款条件的把控<br>（13）在项目执行过程中，项目经理发现了问题，没有及时采取措施，对合同进行变更，将可能的影响降到最低<br>（14）合同条款中的验收标准存在问题<br>（15）缺乏合同管理的意识</p>
+<p>3、工作说明书会充分详细地描述拟采购的产品、服务或成果，以便潜在卖方确定是否有能力提供此类产品、服务或成果。工作说明书的内容包括:规格、所需数量、质量水平、绩效数据、履约期间、工作地点和其他要求。<br>4、招标文件可以是信息邀请书、报价邀请书、建议邀请书，或其他适当的采购文件。</p>
+<p>5、合同的分类:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>合同类型</td>
+<td>特点、适用范围</td>
+</tr>
+<tr>
+<td>总承包合同</td>
+<td>买方将项目的全过程作为一个整体发包给同一个卖方的合同。  <br>一般适用于经验丰富、技术实力雄厚且组织管理协调能力强的卖方，这样有利于发挥卖方的专业优势，保证项目的质量和进度，提高投资效益。</td>
+</tr>
+<tr>
+<td>单项承包合同</td>
+<td>1.一个卖方只承包某一项或某几项内容，买方分别与不同卖方订立的合同。  <br>2.有利于吸引更多卖方参与投标，使买方可以选择在某一单项上实力强的卖方。</td>
+</tr>
+<tr>
+<td>分包合同</td>
+<td>1.经合同约定和买方认可，卖方将其承包项目的某一部分或某几部分（非项目的主体结构）再发包给具有相应资质条件的分包方，与分包方订立的合同称为项目分包合同。  <br>2.订立项目分包合同必须同时满足5个条件:①经过买方认可;②分包的部分必须是项目非主体工作;③只能分包部分项目，而不能转包整个项目;④分包方必须具备相应的资质条件;⑤分包方不能再次分包</td>
+</tr>
+<tr>
+<td>总价合同</td>
+<td>①固定总价合同（FFP）一是最常用的合同类型。大多数买方（甲方）都喜欢这种合同。因为采购的价格在一开始就确定, 范围发生变更）。因合同履行不好而导致的任何并且不允许改变（除非工作成本增加都由卖方承担。  <br>②总价加激励费用合同（FPIF）—允许一定的绩效偏离,并对实现既定目标给与相关的财务奖励 。要设置价格上限 ,卖方必须完成工作并且要因承担高于上限的全部成本。  <br>③总价加经济价格调整合同（FPEPA）—适用于：卖方履约期将跨越几年；将以不同货币支付价款。允许，根据条件变化（如通货膨胀、某些特殊商品的成本增降），以事先确定的方式对合同价格进行最终调整。  <br>④订购单（单边合同）—当非大量采购产品时，可由买方直接填写卖方提供的订购单，卖方照此供货。适用购买标准产品，且数量不大<br><br>适用工作范围很明确，且项目的设计已具备详细的细节【卖方承担成本风险】</td>
+</tr>
+<tr>
+<td>成本补偿合同</td>
+<td>①成本加固定费用合同（CPFF）一为卖方报销履行合同工作所发生的一切可列支成本，并向卖方支付一笔固定费用，该费用以项目初始成本估算的某一百分比计算。  <br>②成本加激励费用（CPIF）一为卖方报销履行合同工作所发生的一切可列支成本，并在卖方达到合同规定的绩效目标时，向卖方支付预先确定的激励费用。  <br>在CPIF合同下：  <br>（1）如果实际成本大于目标成本，卖方可以得到的付款总数为“ 目标成本+目标费用+买方应负担的成本超支”  <br>（2）如果实际成本小于目标成本，卖方可以得到的付款总数为“ 目标成本+目标费用-买方应享受的成本节约  <br>③成本加奖励费用（CPAF）—成本加奖励费用合同为卖方报销履行合同工作所发生的一切合法成本（即成本实报实销），买方再凭自己的主观感觉给卖方支付一笔利润，完全由买方根据自己对卖方绩效的主观判断来决定奖励费用，并且卖方通常无权申诉。<br><br>适用工作范围尚不清楚【买方承担成本风险】</td>
+</tr>
+<tr>
+<td>工料合同</td>
+<td>1.指按项目工作所花费的实际工时数和材料数，按事先确定的单位工时费用标准和单位材料费用标准进行付款。计划价格*实际量（量实报实销，激发积极性）  <br>2.适用于工作性质清楚，工作范围比较明确，但具体的工作量无法确定的项目。在金额小、工期短、不复杂的项目上可以有效使用  <br>3.买方承担工作量变动的风险；卖方承担单价风险。  <br>4.是兼具成本补偿合同和总价合同的某些特点的混合型合同。在不能很快编写出准确工作说明书的情况下，经常使用工料合同来增加人员、聘请专家以及寻求其他外部支持。<br><br>适用工作性质清楚，但范围不是很清楚，而且工作不复杂，又需要快速签订合同【双方分担风险】</td>
+</tr>
+</tbody></table>
+<p>7、合同管理包括：合同签订管理、合同履行管理、合同变更管理、合同档案管理、合同违约索赔管理。<br>8、索赔的流程：①提出索赔要求、②报送索赔资料、③监理工程师答复、④监理工程师逾期答复后果、⑤持续索赔、⑥仲裁与诉讼<br>9、熟悉招投标法、政府采购法相关内容<br>10、招投标流程：①招标人采用公开招标方式的，应当发布招标公告一②招标人根据招标项目的具体情况，可以组织潜在投标人踏勘项目现场一③投标人投标一④开标一⑤评标一⑥确定中标人一⑦订立合同。<br>11、政府采购方式有：①公开招标；②邀请招标；③竞争性谈判；④单一来源采购；⑤询价；⑥其他</p>
+<h3 id="配置与变更管理"><a href="#配置与变更管理" class="headerlink" title="配置与变更管理"></a>配置与变更管理</h3><p>1、配置、变更管理问题<br>(1)没编写配置管理计划<br>(2)没进行配置识别<br>(3)没进行配置控制<br>(4)没进行配置状态报告<br>(5)没进行配置审计<br>(6)没进行发布管理与交付<br>(7)修改完成后未进行验证<br>(8)对用户的要求未进行记录<br>(9)对变更的请求未进行足够的分析，也没有获得批准<br>(10)在修改的过程中没有注意进行版本管理<br>(11)项目经理兼任配置管理员，精力不够，无法完成配置管理工作；<br>(12)变更控制委员会组成成员不合理<br>(13)项目中没有建立基线，导致需求、设计、编码无法对应；<br>(14)配置管理计划不应由CCB制定<br>(15)基线变更流程缺少变更验证（或确认）环节<br>(16)对配置管理工具没有进行有效评估<br>(17)没有将变更可能造成的影响告诉变更提出方。应该对变更提出方施加影响，确认变更的必要性，确保变更是有价值的<br>(18)没有对变更实施进行监控，没有对变更作记录并形成文档，造成变更内容无法追溯</p>
+<p>(19)直接在受控库中增加修改权限<br>(20)没有统一的版本管理机制，各版本不可追溯，导致重要版本丢失<br>(21)没有对配置库进行很好的分类管理<br>(22)变更管理没有走流程或没有规范的变更流程。<br>(23)项目发生变更时没有及时更新项目计划<br>(24)没有很好的配置管理系统<br>(25)变更结束后要通知相关影响人员，而不仅仅只项目经理确认<br>(26)甲乙两人不能同时修改错误<br>(27)变更没有记录文件<br>(28)开发库与产品库的内容均不完整，且文档更新很不及时<br>(29)项目经理严重缺乏配置管理的意识与经验<br>(30)不能删除配置项<br>(31)配置管理意识不足<br>(32)没编写可行的配置管理方案<br>(34)变更发布应交由CMO完成</p>
+<p>2、变更问题与措施<br>常见问题：①未制定标准的变更管理流程；②未书面记录变更；③未充分评估变更影响；④未成立CCB (CCB未包括客户)⑤未及时更新项目管理计划及文件；⑥未及时与干系人沟通; ⑦未验证和监控变更；<br>应对措施：①建立规范的变更控制流程；②书面中请和记录变更；③应充分评估变更影响；④应建立CCB,包含客户等干系人；⑤及时更新项目计划和文件；⑥及时与干系人沟通变更影响和结果；⑦变更后要验证和监控变更；</p>
+<p>3、请分析该项目实施过程中存在哪些主要问题。<br>(1)未提交书面变更中请，项目经理没有按照变更管理的流程要求制定变更规则。<br>(2)变更控制委员会组成成员不合理，应该包括客户代表，最好是高级管理人员，并明确分工<br>(3)几乎所有变更都被批准和接受，说明CCB没有严格控制项目变更申请的提交，没有认真审核；<br>(4)应该对变更因素施加影响，积极沟通，确认变更的必要性<br>(5)没有进行变更后的评审，对变更造成的影响没有进行分析。<br>(6)没有将变更可能造成的影响告诉变更提出方(或对应的干系人)。<br>(7)没有严格按照变更控制流程进行变更管理。<br>(8)没有对变更作记录并形成文档，造成变更内容无法追溯。<br>(9)变更批准后，没有及时更新相应的项目计划和文件，导致内容不一致<br>(10)变更结果没有进行正式验证，未得到客户的确认<br>(11)是否接受或拒绝变更，不应该全部由项目经理(或某个人)决定；<br>(12)项目变更后没有相应的变更合同。<br>(13)客户需求发生变化时，应该由项目经理进行变更影响评估，而不是由其他人进行。<br>(14)对于变更请求，任何人不能直接进行修改，应该由CCB (变更控制委员会)决策， <br>同意修改后，由项目经理安排相关人员进行修改。<br>(15)没有对变更影响作评估以及对变更方案的论证。<br>(16)没有成立CCB (变更控制委员会)。<br>(17)缺乏对变更过程的监控措施。<br>(18)没有对变更的效果作评估。<br>(19)没有变更文件。</p>
+<p>4、典型的配置项包括项目计划书、技术解决方案、需求文档、设计文档、源代码、可执行代码、测试用例、运行软件所需的各种数据、设备型号及其关键部件</p>
+<p>5、配置项可以分为基线配置项和非基线配置项两类。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>基线类型</td>
+<td>基线包括</td>
+<td>管理原则</td>
+</tr>
+<tr>
+<td>基线配置项</td>
+<td>所有的设计文档和源程序</td>
+<td>向开发人员开放读取的权限</td>
+</tr>
+<tr>
+<td>非基线配置项</td>
+<td>项目的各类计划和报告</td>
+<td>向PM、CCB及相关人员开放</td>
+</tr>
+</tbody></table>
+<p>  6、配置项的状态可分为“莫稿” “正式”和“修改”三种。<br>配置项刚建立时，其状态为 “草稿” 【0.YZ】。配置项通过评审后，其状态变为“正式”【X.Y】。 <br>此后若更改配置项，则其状态变为“修改”【X.YZ】。当配置项修改完 毕并重新通过评审时，其状态又变为“正式”。<br>  7、配置库可以分开发库、受控库、产品库3种<br>8、配置库的建库模式有两种：按配置项类型建库和按任务建库</p>
+<p>9、配置管理相关角色常包括:变更控制委员会（CCB）、配置管理负责人、配置管理员和配置项负责人等。<br>10、配置管理负责人也称配置经理，负责管理和决策整个项目生命周期中的配置活动，具体有：①管理所有活动，包括计划、识别、控制、审计和回顾;②负责配置管理过程;③通过审计过程确保配置管理数据库的准确和真实;④审批配置库或配置管理数据库的结构性变更;⑤定义配置项责任人;⑥指派配置审计员;⑦定义配置管理数据库范围、配置项属性、配置项之间关系和配置项状态;⑧评估配置管理过程并持续改进;⑨参与变更管理过程评估;⑩对项目成员进行配置管理培训。<br>11、配置管理员负责在整个项目生命周期中进行配置管理的主要实施活动，具体有:①建立和维护配置管理系统;②建立和维护配置库或配置管理数据库;③配置项识别;④建立和管理基线;⑤版本管理和配置控制;⑥配置状态报告;⑦配置审计;⑧发布管理和交付。（20下52）<br>12、配置项负责人确保所负责的配置项的准确和真实:①记录所负责配置项的所有变更;②维护配置项之间的关系;③调查审计中发现的配置项差异，完成差异报告;④遵从配置管理过程; <br>⑤参与配置管理过程评估。<br>13、配置管理的日常管理活动主要包括:制订配置管理计划、配置项识别、配置项控制、配置状态报告、配置审计、配置管理回顾与改进等。<br>14、基于配置库的变更控制，某软件产品升级流程：<br>①将待升级的基线（假设版本号为V2.1）从产品库中取出,放入受控库。<br>②程序员将欲修改的代码段从受控库中检出（Checkout）,放入自己的开发库中进行修改。 <br>代码被Checkout后即被“锁定”，以保证同一段代码只能同时被一个程序员修改，如果甲正对 <br>其修改，乙就无法Checkouto<br>③程序员将开发库中修改好的代码段检入（Checkin）受控库。Checkin后，代码的“锁定” <br>被解除，其他程序员可以Checkout该段代码了。<br>④软件产品的升级修改工作全部完成后，将受控库中的新基线存入产品库中（软件产品的 <br>版本号更新为V2.2,旧的V2.1版并不删除，继续在产品库中保存）。<br>15、功能配置审计是审计配置项的一致性（配置项的实际功效是否与其需求一致），验证： <br>①配置项的开发已圆满完成；②配置项已达到配置标识中规定的性能和功能特征；③配置项的操作和支持文档己完成并且是符合要求的。<br>16、物理配置审计是审计配置项的完整性（配置项的物理存在是否与预期一致），验证： <br>①要交付的配置项是否存在；②配置项中是否包含了所有必需的项目。<br>17、变更分类<br>（1）根据变更性质可分法 重大变更、重要变更和一般变更。通过不同审批权限控制。<br>（2）根据变更的迫切性可分为：紧急变更、非紧急变更。通过不同变更处理流程进行<br>18、信息系统项目鱼，除项目经理和CCB外，通常还会定义变更管理负责人、变更请求者、变更实施者和变更顾问委员会等。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>角色</td>
+<td>职责</td>
+</tr>
+<tr>
+<td>项目经理</td>
+<td>项目经理在变更中的作用是:响应变更提出者的需求；评估变更对项目的影响及应对方案；将需求由技术要求转化为资源需求，供授权人决策;并据评审结果实施（即调整基准），确保项目基准反映项目实施情况。</td>
+</tr>
+<tr>
+<td>变更管理负责人</td>
+<td>也称变更经理，通常是变更管理过程解决方案的负责人，其主要职责包括：①负责整个变更过程方案的结果；②负责变更管理过程的监控；③负责协调相关的资源，保障所有变更按照预定过程顺利运作;④确定变更类型，组织变更计划和日程安排；⑤管理变更的日程安排；⑥变更实施完成之后的回顾和关闭;⑦承担变更相关责任，并且具有相应权限；⑧可能以逐级审批形式或团队会议的形式参与变更的风险评估和审批等。</td>
+</tr>
+<tr>
+<td>变更请求者</td>
+<td>负责记录与提交变更请求单，具体为:①提交初步的变更方案和计划;②初步评价变更的风险和影响，给变更请求设定适当的变更类型;③对理解变更过程有能力要求等。</td>
+</tr>
+<tr>
+<td>变更实施者</td>
+<td>需要拥有有执行变更方案的内容的技术能力，负责按照实施计划实施具体的变更任务。</td>
+</tr>
+<tr>
+<td>变更顾问委员会</td>
+<td>负责对重大变更行使审批，提供专业意见和辅助审批，具体为:①在紧急变更时，其中被授权者行使审批权限;②定期听取变更经理汇报，评估变更管理执行情况，必要时提出改进建议等。</td>
+</tr>
+</tbody></table>
+<p>19、变更的流程：①变更申请一②对变更的初审一③变更方案论证一④变更审查一⑤发出通知并实施一⑥实施监控一⑦效果评估一⑧变更收尾；</p>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
+      
+    </div>
+  
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-02-22T19:46:17+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2025年2月22日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%A1%88%E4%BE%8B%E7%90%86%E8%AE%BA%E5%8F%8A%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>案例理论及常见问题</p></a></div>
+  <span hidden itemprop="keywords">案例理论及常见问题</span>
+  
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://ciey.top/2023/04/18/on-project-analysis-of-cases/&title=信息系统项目管理师案例理论及常见问题 - ciey blog&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ciey.top/2023/04/18/on-project-analysis-of-cases/&title=信息系统项目管理师案例理论及常见问题 - ciey blog&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://ciey.top/2023/04/18/on-project-analysis-of-cases/&title=信息系统项目管理师案例理论及常见问题 - ciey blog&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2023/04/23/on-project-resource-management/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>项目资源管理论文范文</p>
+          <p class='content'>    2021年11月，我作为项目经理参加了某市城市智联算法运营中心项目，该项目是由市大数据局发起的，项目投资总额1840万，建设周期一年。该项目是在原有平安城市、雪亮工程建设基础上通过整合全...</p>
+        </a>
+      
+      
+        <a class='next' href='/2019/08/22/express-async-error/'>
+          <p class='title'>express全局处理async error<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>
+express 结合 async&#x2F;await 可以获得很好的开发体验。一般情况下 async&#x2F;await 在错误处理方面，在最一开始使用Promise时，都习惯用Promi...</p>
+        </a>
+      
+    </div>
+  
+  <!-- 文章推荐 -->
+  
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2023/04/18/on-project-analysis-of-cases/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
+    
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
+</div>
+<aside id='l_side' itemscope itemtype="https://schema.org.cn/WPSideBar">
+  
+
+  
+    
+    
+      
+    
+  
+
+
+<div class="widget-sticky">
+
+  
+  
+
+
+<section class="widget toc-wrapper desktop mobile" id="toc-div" >
+  
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+  <div class='content'>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E6%A6%82%E8%AE%BA"><span class="toc-text">项目管理概论</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AB%8B%E9%A1%B9%E7%AE%A1%E7%90%86"><span class="toc-text">立项管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B4%E5%90%88%E7%AE%A1%E7%90%86"><span class="toc-text">整合管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8C%83%E5%9B%B4%E7%AE%A1%E7%90%86"><span class="toc-text">范围管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9B%E5%BA%A6%E7%AE%A1%E7%90%86"><span class="toc-text">进度管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%88%90%E6%9C%AC%E7%AE%A1%E7%90%86"><span class="toc-text">成本管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86"><span class="toc-text">质量管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86"><span class="toc-text">资源管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B2%9F%E9%80%9A%E7%AE%A1%E7%90%86"><span class="toc-text">沟通管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B9%B2%E7%B3%BB%E4%BA%BA%E7%AE%A1%E7%90%86"><span class="toc-text">干系人管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86"><span class="toc-text">风险管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%87%E8%B4%AD%E5%92%8C%E5%90%88%E5%90%8C%E7%AE%A1%E7%90%86"><span class="toc-text">采购和合同管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E4%B8%8E%E5%8F%98%E6%9B%B4%E7%AE%A1%E7%90%86"><span class="toc-text">配置与变更管理</span></a></li></ol>
+  </div>
+</section>
+
+  
+
+</div>
+
+  <!-- Custom Files side begin -->
+  
+  <!-- Custom Files side end -->
+</aside>
+
+
+
+        </div>
+        
+  
+  <footer class="footer clearfix"  itemscope itemtype="https://schema.org.cn/WPFooter">
+    <br><br>
+    
+      
+        <div class="aplayer-container">
+          
+
+
+        </div>
+      
+    
+      
+        <br>
+        <div class="social-wrapper" itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+          
+            
+          
+            
+          
+            
+          
+        </div>
+      
+    
+      
+        <div><p>博客内容遵循 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+</div>
+      
+    
+      
+        本站使用
+        <a href="https://github.com/volantis-x/hexo-theme-volantis/#6.0.0-alpha.1" target="_blank" class="codename">Volantis</a>
+        作为主题
+      
+    
+      
+        <div class='copyright'>
+        <p><a href="/">Copyright © since 2017 XXX</a></p>
+
+        </div>
+      
+    
+    <!-- Custom Files footer begin-->
+    
+    <!-- Custom Files footer end-->
+  </footer>
+
+
+        <a id="s-top" class="fa-solid fa-arrow-up fa-fw" title="top"></a>
+      </div>
+    </div>
+    <div>
+      <script>
+  /******************** volantis.dom ********************************/
+  // 页面选择器 将dom对象缓存起来 see: /source/js/app.js etc.
+  volantis.dom.bodyAnchor = volantis.dom.$(document.getElementById("safearea")); // 页面主体
+  volantis.dom.topBtn = volantis.dom.$(document.getElementById('s-top')); // 向上
+  volantis.dom.wrapper = volantis.dom.$(document.getElementById('wrapper')); // 整个导航栏
+  volantis.dom.coverAnchor = volantis.dom.$(document.querySelector('#l_cover .cover-wrapper')); // 1个
+  volantis.dom.switcher = volantis.dom.$(document.querySelector('#l_header .switcher .s-search')); // 搜索按钮   移动端 1个
+  volantis.dom.header = volantis.dom.$(document.getElementById('l_header')); // 移动端导航栏
+  volantis.dom.search = volantis.dom.$(document.querySelector('#l_header .m_search')); // 搜索框 桌面端 移动端 1个
+  volantis.dom.mPhoneList = volantis.dom.$(document.querySelectorAll('#l_header .m-phone .list-v')); //  手机端 子菜单 多个
+</script>
+
+<script>
+  
+  volantis.css("https://unpkg.com/@fortawesome/fontawesome-free@6.6.0/css/all.min.css");
+  
+  
+  
+</script>
+
+<!-- required -->
+
+
+<!-- internal -->
+
+<script src="/js/app.js"></script>
+
+
+
+
+<!-- rightmenu要在darkmode之前（ToggleButton） darkmode要在comments之前（volantis.dark.push）-->
+
+
+
+<script>
+  function loadIssuesJS() {
+    
+      const sites_api = document.getElementById('sites-api');
+      if (sites_api != undefined && typeof SitesJS === 'undefined') {
+        volantis.js("/js/plugins/tags/sites.js")
+      }
+    
+    
+      const friends_api = document.getElementById('friends-api');
+      if (friends_api != undefined && typeof FriendsJS === 'undefined') {
+        volantis.js("/js/plugins/tags/friends.js")
+      }
+    
+    
+      const contributors_api = document.getElementById('contributors-api');
+      if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
+        volantis.js("/js/plugins/tags/contributors.js")
+      }
+    
+  };
+  loadIssuesJS()
+</script>
+
+
+
+
+  <script defer src="https://unpkg.com/vanilla-lazyload@19.1.3/dist/lazyload.min.js"></script>
+<script>
+  // https://www.npmjs.com/package/vanilla-lazyload
+  // Set the options globally
+  // to make LazyLoad self-initialize
+  window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 0
+  };
+  // Listen to the initialization event
+  // and get the instance of LazyLoad
+  window.addEventListener(
+    "LazyLoad::Initialized",
+    function (event) {
+      window.lazyLoadInstance = event.detail.instance;
+    },
+    false
+  );
+  document.addEventListener('DOMContentLoaded', function () {
+    lazyLoadInstance.update();
+  });
+</script>
+
+
+
+
+  
+
+<script>
+  window.FPConfig = {
+	delay: 0,
+	ignoreKeywords: ["#"],
+	maxRPS: 6,
+	hoverDelay: 0
+  };
+</script>
+<script defer src="https://unpkg.com/volantis-static@0.0.1660614606622/libs/flying-pages/flying-pages.min.js"></script>
+
+
+
+
+
+
+
+
+
+      <script>
+  volantis.layoutHelper("comments",`<div id="artalk_container"><i class="fa-solid fa-cog fa-spin fa-fw fa-2x"></i></div>`);
+  function load_artalk() {
+    if(!document.querySelectorAll("#artalk_container")[0])return;
+    volantis.css("https://unpkg.com/artalk@2.9.1/dist/Artalk.css");
+    
+    volantis.js("https://unpkg.com/artalk@2.9.1/dist/Artalk.js").then(p_artalk);
+    
+  }
+
+  function p_artalk() {
+    if(!document.querySelectorAll("#artalk_container")[0])return;
+    let path = pdata.commentPath;
+    let placeholder = pdata.commentPlaceholder || "" || "";
+    if (path.length == 0) {
+      path = '' || decodeURI(window.location.pathname);
+    }
+    if(!':year/:month/:day/:title/'.includes('/index.html')) {
+      path = path.replaceAll('/index.html', '/').replaceAll('.html', '')
+    }
+
+    volantis.artalk = Artalk.init(Object.assign({"server":"https://yours-artalk-domain","path":null,"placeholder":null,"visitor":true,"latex":false,"imageUploader":{"api":null,"token":null,"resp":null}}, {
+      el: '#artalk_container',
+      pageKey: path,
+      pageTitle: document.title,
+      placeholder: placeholder,
+      site: 'ciey blog',
+      darkMode: volantis.dark.mode === "dark",
+      pvEl: '#artalk_visitors',
+
+      
+    }));
+    const fancyBoxInstance = new VolantisFancyBox();
+    fancyBoxInstance.bind('.atk-content img:not([atk-emoticon])');
+  }
+
+  load_artalk();
+
+  function dark_artalk() {
+    if(!document.querySelectorAll("#artalk_container")[0]) return;
+    volantis?.artalk?.setDarkMode(volantis.dark.mode === "dark")
+  }
+  volantis.dark.push(dark_artalk);
+</script>
+
+    
+
+
+
+
+
+<!-- optional -->
+
+  <script>
+  async function loadSearchScript() {
+    
+        
+    
+    return volantis.js("/js/search/hexo.js");
+  }
+
+  function loadSearchService() {
+    loadSearchScript();
+    document.querySelectorAll(".input.u-search-input").forEach((e) => {
+      e.removeEventListener("focus", loadSearchService, false);
+    });
+
+    document.querySelectorAll(".u-search-form").forEach((e) => {
+      e.addEventListener("submit", (event) => {
+        event.preventDefault();
+      }, false);
+    });
+  }
+
+  // 打开并搜索 字符串 s
+  function OpenSearch(s) {
+    if (typeof SearchService === 'undefined')
+      loadSearchScript().then(() => {
+        SearchService.setQueryText(s);
+        SearchService.search();
+      });
+    else {
+      SearchService.setQueryText(s);
+      SearchService.search();
+    }
+  }
+
+  // 访问含有 ?s=xxx  的链接时打开搜索 // 与搜索引擎 structured data 相关: /scripts/helpers/structured-data/lib/config.js
+  if (window.location.search && /^\?s=/g.test(window.location.search)) {
+    let queryText = decodeURI(window.location.search)
+      .replace(/\ /g, "-")
+      .replace(/^\?s=/g, "");
+    OpenSearch(queryText);
+  }
+
+  // 搜索输入框获取焦点时加载搜索
+  document.querySelectorAll(".input.u-search-input").forEach((e) => {
+    e.addEventListener("focus", loadSearchService, false);
+  });
+</script>
+
+
+
+
+
+
+
+  <script>
+
+
+
+  function p_highlightjs_copyCode(){
+    if (!(document.querySelector(".highlight .code pre") ||
+      document.querySelector(".article pre code"))) {
+      return;
+    }
+    VolantisApp.utilCopyCode(".highlight .code pre, .article pre code")
+  }
+  volantis.requestAnimationFrame(p_highlightjs_copyCode)
+
+</script>
+
+
+
+
+
+
+
+
+
+
+  <script>
+  function load_swiper() {
+    if (!document.querySelectorAll(".swiper-container")[0]) return;
+    volantis.css("https://unpkg.com/swiper@11.1.14/swiper-bundle.min.css");
+    volantis.js("https://unpkg.com/swiper@11.1.14/swiper-bundle.min.js").then(() => {
+      p_swiper();
+    });
+  }
+
+  load_swiper();
+
+  function p_swiper() {
+    volantis.swiper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      spaceBetween: 8,
+      centeredSlides: true,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  }
+
+</script>
+
+
+
+  <script>
+  volantis.css("https://unpkg.com/pace-js@1.2.4/themes/blue/pace-theme-minimal.css");
+  volantis.js("https://unpkg.com/pace-js@1.2.4/pace.min.js").then(() => {
+    Pace.options.restartOnPushState = false;
+    // 阅读进度
+    volantis.scroll.push(() => {
+      Pace.stop();
+      Pace.trigger('start');
+      Pace.bar.update(volantis.scroll.progress() * 100);
+      document.body.className = document.body.className.replaceAll("pace-running ","");
+    },"阅读进度")
+    // todo：配置项开关, 哪些页面添加阅读进度
+  })
+</script>
+
+
+
+
+<script>
+  function listenSidebarTOC() {
+    const navItems = document.querySelectorAll(".toc li");
+    if (!navItems.length) return;
+    const targets = []
+    const sections = Array.from(navItems).forEach((element) => {
+      const link = element.querySelector(".toc-link");
+      const target = document.getElementById(
+        link.getAttribute("href") ? decodeURI(link.getAttribute("href")).replace("#", "") : link.getAttribute("toc-action").split("toc-")[1] // 兼容 hexo-blog-encrypt
+      );
+      targets.push(target)
+      // 解除 a 标签 href 的 锚点定位, a 标签 href 的 锚点定位 会随机启用?? 产生错位???
+      if (link.getAttribute("href")) {
+        link.setAttribute("toc-action", "toc-" + decodeURI(link.getAttribute("href")).replace("#", ""))
+        link.removeAttribute("href")
+      }
+      // 配置 点击 触发新的锚点定位
+      if (target && target.id) {
+        link.addEventListener("click", (event) => {
+          event.preventDefault();
+          // 这里的 addTop 是通过错位使得 toc 自动展开.
+          volantis.scroll.to(target, { addTop: 5, observer: true })
+          // Anchor id
+          history.pushState(null, document.title, "#" + target.id);
+        });
+      }
+      return target;
+    });
+
+    function activateNavByIndex(target) {
+      if (target.classList.contains("active-current")) return;
+
+      document.querySelectorAll(".toc .active").forEach((element) => {
+        element.classList.remove("active", "active-current");
+      });
+      target.classList.add("active", "active-current");
+      let parent = target.parentNode;
+      while (!parent.matches(".toc")) {
+        if (parent.matches("li")) parent.classList.add("active");
+        parent = parent.parentNode;
+      }
+    }
+
+    // 方案一：
+    volantis.activateNavIndex = 0
+    activateNavByIndex(navItems[volantis.activateNavIndex])
+    if (targets[0]) {
+      volantis.scroll.push(() => {
+        if (targets[0].getBoundingClientRect().top >= 0) {
+          volantis.activateNavIndex = 0
+        } else if (targets[targets.length - 1].getBoundingClientRect().top < 0) {
+          volantis.activateNavIndex = targets.length - 1
+        } else {
+          for (let index = 0; index < targets.length; index++) {
+            const target0 = targets[index];
+            const target1 = targets[(index + 1) % targets.length];
+            if (target0.getBoundingClientRect().top < 0 && target1.getBoundingClientRect().top >= 0) {
+              volantis.activateNavIndex = index
+              break;
+            }
+          }
+        }
+        activateNavByIndex(navItems[volantis.activateNavIndex])
+      })
+    }
+
+    // 方案二：
+    // IntersectionObserver 不是完美精确到像素级别 也不是低延时性的
+    // function findIndex(entries) {
+    //   let index = 0;
+    //   let entry = entries[index];
+    //   if (entry.boundingClientRect.top > 0) {
+    //     index = sections.indexOf(entry.target);
+    //     return index === 0 ? 0 : index - 1;
+    //   }
+    //   for (; index < entries.length; index++) {
+    //     if (entries[index].boundingClientRect.top <= 0) {
+    //       entry = entries[index];
+    //     } else {
+    //       return sections.indexOf(entry.target);
+    //     }
+    //   }
+    //   return sections.indexOf(entry.target);
+    // }
+    // function createIntersectionObserver(marginTop) {
+    //   marginTop = Math.floor(marginTop + 10000);
+    //   let intersectionObserver = new IntersectionObserver(
+    //     (entries, observe) => {
+    //       let scrollHeight = document.documentElement.scrollHeight;
+    //       if (scrollHeight > marginTop) {
+    //         observe.disconnect();
+    //         createIntersectionObserver(scrollHeight);
+    //         return;
+    //       }
+    //       let index = findIndex(entries);
+    //       activateNavByIndex(navItems[index]);
+    //     }, {
+    //       rootMargin: marginTop + "px 0px -100% 0px",
+    //       threshold: 0,
+    //     }
+    //   );
+    //   sections.forEach((element) => {
+    //     element && intersectionObserver.observe(element);
+    //   });
+    // }
+    // createIntersectionObserver(document.documentElement.scrollHeight);
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    volantis.requestAnimationFrame(listenSidebarTOC)
+  });
+</script>
+
+
+
+
+
+<script>
+  document.onreadystatechange = function () {
+    if (document.readyState == 'complete') {
+      // 页面加载完毕 样式加载失败，或是当前网速慢，或是开启了省流模式
+      const { saveData, effectiveType } = navigator.connection || navigator.mozConnection || navigator.webkitConnection || {}
+      if (getComputedStyle(document.querySelector("#safearea"), null)["display"] == "none" || saveData || /2g/.test(effectiveType)) {
+        document.querySelectorAll(".reveal").forEach(function (e) {
+          e.style["opacity"] = "1";
+        });
+        document.querySelector("#safearea").style["display"] = "block";
+      }
+    }
+  }
+</script>
+
+
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"ciey blog","url":"https://ciey.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"ciey","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://ciey.top/","sameAs":["https://github.com/volantis-x"],"description":"ciey‘s blog"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://ciey.top/","name":"ciey blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://ciey.top/categories/项目管理/","name":"项目管理"}},{"@type":"ListItem","position":3,"item":{"@id":"https://ciey.top/2023/04/18/on-project-analysis-of-cases/","name":"信息系统项目管理师案例理论及常见问题"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"ciey blog","url":"https://ciey.top/","keywords":null,"description":"ciey‘s blog","author":{"@type":"Person","name":"ciey","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://ciey.top/","description":"ciey‘s blog"},"publisher":{"@type":"Organization","name":"ciey blog","url":"https://ciey.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://ciey.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"信息系统项目管理师案例理论及常见问题","description":"ciey‘s blog","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://ciey.top/2023/04/18/on-project-analysis-of-cases/"},"author":{"@type":"Person","name":"ciey","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://ciey.top/"},"publisher":{"@type":"Organization","name":"ciey blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://ciey.top/2023/04/18/on-project-analysis-of-cases/","wordCount":0,"datePublished":"2023-04-18T11:30:00.000Z","dateModified":"2025-02-22T11:46:17.617Z","articleSection":"项目管理","keywords":"案例理论及常见问题","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+
+
+
+
+    </div>
+    <!-- import body_end begin-->
+    <!-- import body_end end-->
+    <!-- Custom Files bodyEnd begin-->
+    
+    <!-- Custom Files bodyEnd end-->
+  </body>
+</html>
